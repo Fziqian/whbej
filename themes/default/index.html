@@ -1,0 +1,322 @@
+<{include file="block/sheader.html"}>
+    <{include file="block/header.html"}>
+    <div class="index-banner">
+        <ul>
+            <li><a href=""><img src="%THEME%/images/banner-z0408.jpg" alt=""></a></li>
+			 <li><a href=""><img src="%THEME%/images/banner-z0.jpg" alt=""></a></li>
+            <li><a href=""><img src="%THEME%/images/banner-z2.jpg" alt=""></a></li>
+            <li><a href=""><img src="%THEME%/images/banner-z3.jpg" alt=""></a></li>
+        </ul>   
+    </div>
+    <div class="clear"></div>
+    <{widget id="tenders/templateform"}>
+    <div class="clear"></div>
+    <div class="index-activity">
+        <ul class="margin">
+            <li>
+                <span><img src="%THEME%/images/zyh-1.png" alt=""></span>
+                <p data-id='1'></p>  
+            </li>
+            <li>
+                <span><img src="%THEME%/images/zyh-2.png" alt=""></span>
+                <p data-id='2'></p>
+            </li>
+            <li>
+                <span><img src="%THEME%/images/zyh-3.png" alt=""></span>
+                <p data-id='3'></p>
+            </li>
+        </ul>
+    </div>
+    <div class="clear"></div>
+    <div class="case-switch margin">
+        <div class="sequence-theme">
+            <div id="sequence">
+                <img class="sequence-prev" src="%THEME%/images/bt-prev.png" alt="Previous Frame" />
+                <img class="sequence-next" src="%THEME%/images/bt-next.png" alt="Next Frame" />
+                <ul class="sequence-canvas">
+                    <li class="animate-in">
+                        <h2 class="title"><img src="%THEME%/images/index-tp11.jpg" alt="Model 1" /></h2>
+                        <img class="model" src="%THEME%/images/index-tp10.jpg" alt="Model 1" />
+                    </li>
+                    <li>
+                        <h2 class="title"><img src="%THEME%/images/index-tp13.jpg" alt="Model 1" /></h2>
+                        <img class="model" src="%THEME%/images/index-tp12.jpg" alt="Model 2" />
+                    </li>
+                    <!-- <li>
+                        <h2 class="title"><img src="%THEME%/images/model3.png" alt="Model 1" /></h2>
+                        <img class="model" src="%THEME%/images/model3.png" alt="Model 3" />
+                    </li> -->
+                </ul>
+            </div>
+        </div>
+        <script src="<{$pager.theme}>/default/js/jquery.sequence-min.js"></script>
+        <script src="<{$pager.theme}>/default/js/sequencejs-options.modern-slide-in.js"></script>
+    </div>
+    <div class="clear"></div>
+    <div class="index-diary margin">
+        <h2>
+            <p>实景案例</p>
+            <p>0距离感受不二家装修成品实景案例</p>
+            <a href="/article-lists-9.html">查看更多实景</a>
+        </h2>
+        <{widget id="adv" name="主页装修实景" limit="3"}>
+        <!-- <ul>
+            <li class="popupform">喜欢这个</li>
+            <li class="popupform">喜欢这个</li>
+            <li class="popupform">喜欢这个</li>
+            <li class="popupform">喜欢这个</li>
+        </ul> -->
+    </div>
+    <div class="clear"></div>
+    <!-- <div class="index-design">
+        <h2><img src="%THEME%/images/zbt-2.png" alt=""></h2>
+        <ul>
+            <{calldata mdl='designer/designer' limit=5}>
+            <li>
+                <p><{$item.name}></p>
+                <a href="<{link ctl='designer:detail' arg0=$item.designer_id}>" target="_blank" ><img src="<{$pager.img}>/<{$item.face_pic}>" alt=""></a>
+                <dl>
+                    <dt><a href="<{link ctl='designer:detail' arg0=$item.designer_id}>" target="_blank"  ><{$item.name}></a></dt>
+                    <dd><{$item.cate.cate_name}></dd>
+                    <dd>设计理念：<{$item.concept|cutstr:120}></dd>
+                    <dd class="popupform">预约设计</dd>
+                </dl>
+            </li>
+            <{/calldata}>
+        </ul>
+    </div> -->
+    <div class="clear"></div>
+    <!-- <div class="index-sketch">
+        <span class="index-sketch-a">
+            <a href="<{link ctl='designer'}>" target="_blank">> 更多设计师</a>
+            <a href="<{link ctl='case'}>" target="_blank">> 更多效果图</a>
+        </span>
+        <ul>
+            <li>
+                <p></p>
+                <p>风格:</p>
+                <a href="" target="_blank">不限</a>
+                <a href="" target="_blank">简约现代</a>
+                <a href="" target="_blank">中式</a>
+                <a href="" target="_blank">欧式</a>
+                <a href="" target="_blank">美式</a>
+                <a href="" target="_blank">日韩</a>
+                <a href="" target="_blank">东南亚</a>
+                <a href="" target="_blank">地中海</a>
+                <a href="" target="_blank">新古典</a>
+                <a href="" target="_blank">田园</a>
+                <a href="" target="_blank">混搭</a>
+            </li>
+            <li>
+                <p>户型:</p>
+                <a href="" target="_blank">不限</a>
+                <a href="" target="_blank">小户型</a>
+                <a href="" target="_blank">两房</a>
+                <a href="" target="_blank">三房</a>
+                <a href="" target="_blank">四房</a>
+                <a href="" target="_blank">别墅</a>
+                <a href="" target="_blank">复式</a>
+                <a href="" target="_blank">公寓</a>
+            </li>
+            <li>
+                <p>工装:</p>
+                <a href="" target="_blank">不限</a>
+                <a href="" target="_blank">大型办公室</a>
+                <a href="" target="_blank">小型办公室</a>
+                <a href="" target="_blank">酒店</a>
+                <a href="" target="_blank">宾馆</a>
+                <a href="" target="_blank">酒吧</a>
+                <a href="" target="_blank">茶楼</a>
+                <a href="" target="_blank">店面</a>
+                <a href="" target="_blank">网咖</a>
+            </li>
+        </ul>
+    </div> -->
+    <div class="clear"></div>
+    <div class="index-case">
+        <div class="index-case-center margin">
+            <h2>
+                <p>家装美图</p>
+                <p>看图找灵感，海量装修效果图，激发无限装修创意！</p>
+                <a href="/case.html">查看更多美图</a>
+            </h2>
+            <ul>
+                <{calldata mdl='case/case' limit=4}>
+                <li>
+                    <span>
+                        <a href="javascript:;" class="popupform">预约设计</a>
+                        <a class="like" href="javascript:;" data-like="<{link ctl='case:like' arg0=$item.case_id}>">喜欢</a>
+                    </span>
+                    <p><{$item.title}></p>
+                    <a href="<{link ctl='case:detail' arg0=$item.case_id}>" target="_blank" ><img src="<{$pager.img}>/<{$item.photo}>" alt="" width="100%" height="100%"></a>
+                </li>
+                <{/calldata}>   
+            </ul>   
+        </div>
+    </div>
+    <div class="clear"></div>
+    <div class="index-article margin">
+        <h2>
+            <p>装修课堂</p>
+            <p>学习更多...装修实用经验，避免装修猫腻</p>
+            <a href="/article.html">查看更多知识</a>
+        </h2>
+        <div class="index-article-left">
+            <p>小白必读</p>
+            <p>装修日记</p>
+        </div>
+        <div class="index-article-right">
+            <ul>
+                <div>
+                    <li>
+                        <{foreach $items as $item}>
+                        <img src="<{$pager.img}>/<{$item.thumb}>" alt="">
+                        <p><{$item.title|cutstr:45}></p>
+                        <{/foreach}>
+                    </li>
+                </div>
+                <div>
+                    <li>
+                        <{foreach $items as $item}>
+                        <dl>
+                            <dd><a href="<{link ctl='article:detail' arg0=$item.article_id}>"><{$item.title|cutstr:45}></a></dd>
+                            <dd><{$item.dateline|format:'m月d日 H:i:s'}></dd>
+                        </dl>
+                        <{/foreach}>
+                    </li>
+                </div>
+            </ul>
+            <ul>
+                <div>
+                    <li>
+                        <{foreach $riitems as $item}>
+                        <img src="<{$pager.img}>/<{$item.thumb}>" alt="">
+                        <p><{$item.title|cutstr:45}></p>
+                        <{/foreach}>
+                    </li>
+                </div>
+                <div>
+                    <li>
+                        <{foreach $riitems as $item}>
+                        <dl>
+                            <dd><a href="<{link ctl='article:detail' arg0=$item.article_id}>"><{$item.title|cutstr:45}></a></dd>
+                            <dd><{$item.dateline|format:'m月d日 H:i:s'}></dd>
+                        </dl>
+                        <{/foreach}>
+                    </li>
+                </div>
+            </ul>
+        </div>
+        <span class="rightwen"><{widget id="adv" name="主页小白必读" limit="1"}></span>
+        <!-- <ul>
+            <div>
+                <li><a href="">小白必读<p></p></a></li>
+                <li>
+                    <{foreach $items as $item}>
+                    <img src="<{$pager.img}>/<{$item.thumb}>" alt="">
+                    <p><{$item.title|cutstr:45}></p>
+                    <{/foreach}>
+                </li>
+            </div>
+            <div>
+                <li><a href="">装修日记<p></p></a></li>
+                <li>
+                    <{foreach $items as $item}>
+                    <dl>
+                        <dd><a href="<{link ctl='article:detail' arg0=$item.article_id}>"><{$item.title|cutstr:45}></a></dd>
+                        <dd><{$item.dateline|format:'m月d日 H:i:s'}></dd>
+                    </dl>
+                    <{/foreach}>
+                </li>
+            </div>
+        </ul>
+        <span class="rightwen"><{widget id="adv" name="主页小白必读" limit="1"}></span> -->
+    </div>
+    <div class="clear"></div>
+    <div class="index_Journalismbox">
+        <div class="index_Journalism">
+            <h3>设计团队</h3>
+            <ul class="left">
+                <{calldata mdl='designer/designer' limit=5}>
+                <li>
+                    <div class="signer_all">
+                        <div>
+                             <h4>对话人物</h4>
+                             <h5><{$item.name}></h5>
+                             <p>设计独白：<{$item.concept|cutstr:75}></p>
+                             <a href="<{link ctl='designer:detail' arg0=$item.designer_id}>">点击查看更多</a>                     
+                        </div>
+                        <img src="<{$pager.img}>/<{$item.face_pic}>" alt="<{$item.name}>">
+                    </div>
+                    <div class="signer_right">
+                         <a class="titles" href="/design/list-htm-fid-6.html"><{$item.name}> <{$item.cate.cate_name}></a>
+                         <a class="context" href=""><{$item.intro}></a>
+                    </div>
+                </li>
+                <{/calldata}>                        
+            </ul>        
+            <div class="right">
+                <a href="" target="_blank"><img src="http://img.nmszs.com/upload_files/label/8_20160816140829_gbq7d.jpg" width="389" height="165" border="0"></a>
+                <div>
+                    <strong>服务热线</strong>
+                    <p>18186445083</p>
+                </div>
+            </div>
+            
+            <a class="more" href="/designer.html">查看更多设计师</a>
+        </div>
+    </div>
+    <div class="clear"></div>
+    <div class="index-process margin">
+        <h2>
+            <p>装修流程</p>
+            <p>装修一步步，了解更多省心更多</p>
+        </h2>
+        <ul>
+            <li><img src="%THEME%/images/zlc-1.jpg" alt=""><p><img src="%THEME%/images/zlc-10.png" alt=""></p></li>
+            <li><img src="%THEME%/images/zlc-2.jpg" alt=""><p><img src="%THEME%/images/zlc-11.png" alt=""></p></li>
+            <li><img src="%THEME%/images/zlc-3.jpg" alt=""><p><img src="%THEME%/images/zlc-12.png" alt=""></p></li>
+            <li><img src="%THEME%/images/zlc-4.jpg" alt=""><p><img src="%THEME%/images/zlc-13.png" alt=""></p></li>
+            <li><img src="%THEME%/images/zlc-5.jpg" alt=""><p><img src="%THEME%/images/zlc-14.png" alt=""></p></li>
+            <li><img src="%THEME%/images/zlc-6.jpg" alt=""><p><img src="%THEME%/images/zlc-15.png" alt=""></p></li>
+            <li><img src="%THEME%/images/zlc-7.jpg" alt=""><p><img src="%THEME%/images/zlc-16.png" alt=""></p></li>
+        </ul>
+    </div>
+    <!-- <div class="clear"></div> -->
+    <!-- <div class="index-construction">
+        <h2><img src="%THEME%/images/zbt-4.png" alt=""></h2>
+        <div class="index-construction-left">
+            <ul>
+                <{calldata mdl='manager/manager' limit=4}>
+                <li><a href="<{link ctl='manager:detail' arg0=$item.manager_id}>" target="_blank" ><p><{$item.name}></p><img src="<{$pager.img}>/<{$item.face_pic}>" alt=""></a></li>    
+                <{/calldata}>
+            </ul>
+        </div>
+        <div class="index-construction-right">
+            <h3></h3>
+            <div class="index-construction-right-gl">
+                <ul>
+                    <{calldata mdl='case/comment' limit=10}>
+                    <li>
+                        <p><span><{$item.dateline|format:'Y-m-d'}></span><{$item.nickname}></p>
+                        <p><{$item.content}></p>
+                    </li>
+                    <{/calldata}>
+                </ul>
+            </div>
+        </div>
+    </div> -->
+    <!-- <div class="clear"></div> -->
+    <!-- <div class="index-work">
+        <ul>
+            <li><span>在建工地</span><a href="<{link ctl='site'}>" target="_blank">查看更多</a></li>
+            <{calldata mdl='site/site' limit=4}>
+            <li>
+                <a href="<{link ctl='site:detail' arg0=$item.site_id}>" target="_blank" ><img src="<{$pager.img}>/<{$item.face_pic}>" alt=""></a>
+                <p><b><{$item.status_title}></b><{$item.title|cutstr:20}></p>
+            </li>
+            <{/calldata}>
+        </ul>
+    </div> -->
+    <div class="clear"></div>
+<{include file="block/footer.html"}>

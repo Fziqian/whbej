@@ -1,0 +1,30 @@
+<{include file="block/mobile_header.html"}>
+<!--头部开始-->
+<div class="content">
+    <div class="zh-m-head">
+      <img src="<{$pager.themepath}>/images/mobile/m6_01.jpg" />
+      <img src="<{$pager.themepath}>/images/mobile/m6_02.jpg" />
+    </div>
+    <div class="zh-m-form" id="zh-m-form">
+      <h1>开启更超值的省心装修</h1>
+      <p class="zh-m-under-title">您的信息将完全保密，请放心填写</p>
+      <form class="tenders" action="<{link ctl='mobile/tenders:save'}>" mini-form="tenders" method="post">
+        <input type="hidden" name="data[from]" value="TZB" />
+        <input type="text" name="data[contact]"  placeholder="您的姓名" />
+        <input type="text" name="data[mobile]"  placeholder="联系方式" />
+        <input type="text" name="data[house_mj]"  placeholder="装修面积" />
+        <input type="text"  placeholder="请输入小区名称" />
+        <input type="submit"  value="立即预约 " />
+      </form>
+<!--      <p>已有<span class="strong">1260</span>人预约设计服务</p> -->
+      <p>申请成功后，装修管家会在2小时内向您致电</p>
+    </div>
+    <div class="zh-m-content">
+      <img src="<{$pager.themepath}>/images/mobile/m6_img_01.jpg" alt="免费设计与报价"/>
+      <img src="<{$pager.themepath}>/images/mobile/m6_img_02.jpg" alt="免费设计与报价"/>
+      <img src="<{$pager.themepath}>/images/mobile/m6_img_03.jpg" alt="免费设计与报价"/>
+      <img src="<{$pager.themepath}>/images/mobile/m6_img_04.jpg" alt="免费设计与报价"/>
+      <img src="<{$pager.themepath}>/images/mobile/m6_img_05.jpg" alt="免费设计与报价"/>
+      <img src="<{$pager.themepath}>/images/mobile/m6_img_06.jpg" alt="免费设计与报价"/>
+    </div>
+<{include file="block/mobile_footer.html"}>	
