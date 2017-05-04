@@ -29,9 +29,9 @@ class __CFG
     CONST TIME      = __TIME;
     CONST TMPL_DIR  = __TPL_DIR;
 
-    CONST RES_URL = 'http://www.whbej.com/static';
+    CONST RES_URL = 'http://www.whbej.cc/static';
 
-    CONST MYSQL = 'mysql://buerjia:hnq7hg53@buerjia.gotoftp11.com:3306/buerjia/jh_/UTF8';
+    CONST MYSQL = 'mysql://root:root@localhost:3306/xbej/jh_/UTF8';
 
     CONST SECRET_KEY = 'a34eff0213010bfb0dd07c0ea1b21a28';
     CONST Authorize = '077b98373eb0d53eafa4fa50953335f6';

@@ -17,14 +17,8 @@ $(document).ready(function(){
 		}
 	});
 	/*首页banner图切换*/
-	var slidey =$('.index-banner').unslider({
-		arrows: true,
-		fluid: true,
-		dots: true,
-		autoplay: true,
-		speed: 0,               
-		delay: 5000,            
-	});
+	var bannerset = 
+	$(document).on()
 	/*首页设计师切换*/
 	$(document).on('mouseover', '.left .signer_right', function ( ) {
 		$('.left .signer_all').hide();

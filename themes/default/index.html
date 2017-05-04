@@ -1,13 +1,14 @@
 <{include file="block/sheader.html"}>
     <{include file="block/header.html"}>
     <div class="index-banner">
-        <ul>
-            <li><a href=""><img src="%THEME%/images/banner-z0408.jpg" alt=""></a></li>
-			 <li><a href=""><img src="%THEME%/images/banner-z0.jpg" alt=""></a></li>
-            <li><a href=""><img src="%THEME%/images/banner-z2.jpg" alt=""></a></li>
-            <li><a href=""><img src="%THEME%/images/banner-z3.jpg" alt=""></a></li>
-        </ul>   
+        <a href="##" title="##" target="_blank"><img src="http://www.whbej.cc/./attachs/photo/201501/20150113_1750D1B9798A01F9FA50234F6381EAA9.jpg" alt="##" width="1920" height="600"></a>
+        <a href="" title="123445" target="_blank"><img src="http://www.whbej.cc/./attachs/photo/201703/20170327_021CDF68E3CBBB057EAA5A54E0E4B57F.jpg" alt="123445" width="1920" height="600"></a>
     </div>
+    <!-- <div class="index-banner">
+            <div class="banner-conten">
+                <{widget id="adv" name="首页banner广告" limit="10"}>
+            </div>
+    </div> -->
     <div class="clear"></div>
     <{widget id="tenders/templateform"}>
     <div class="clear"></div>
@@ -170,8 +171,10 @@
                 <div>
                     <li>
                         <{foreach $items as $item}>
-                        <img src="<{$pager.img}>/<{$item.thumb}>" alt="">
-                        <p><{$item.title|cutstr:45}></p>
+                            <a href="<{link ctl='article:detail' arg0=$item.article_id}>">
+                                <img src="<{$pager.img}>/<{$item.thumb}>" alt="">
+                                <!-- <p><{$item.title|cutstr:45}></p> -->
+                            </a>
                         <{/foreach}>
                     </li>
                 </div>
@@ -190,8 +193,10 @@
                 <div>
                     <li>
                         <{foreach $riitems as $item}>
-                        <img src="<{$pager.img}>/<{$item.thumb}>" alt="">
-                        <p><{$item.title|cutstr:45}></p>
+                            <a href="<{link ctl='article:detail' arg0=$item.article_id}>">
+                                <img src="<{$pager.img}>/<{$item.thumb}>" alt="">
+                                <!-- <p><{$item.title|cutstr:45}></p> -->
+                            </a>
                         <{/foreach}>
                     </li>
                 </div>
