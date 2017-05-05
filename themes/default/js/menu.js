@@ -69,14 +69,14 @@ $(document).ready(function(){
 		$('.index-banner a').css("opacity","0");
 		$('.index-banner a').eq( istart ).animate({
 			opacity:1
-		},800);
+		},1000);
 		istart++
 	}
-	itime = window.setInterval(indexg,1000); 
+	itime = window.setInterval(indexg,2000); 
 	$(".index-banner").mousemove(function(event) {
 		clearInterval(itime);
 	}).mouseout(function(event) {
-		itime = window.setInterval(indexg,1000); 
+		itime = window.setInterval(indexg,2000); 
 	});
 
 
