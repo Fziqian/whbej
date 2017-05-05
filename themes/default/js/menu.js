@@ -41,6 +41,8 @@ $(document).ready(function(){
 	// })
 	/*首页banner图切换start*/
 	$(".index-banner a").eq(0).css("opacity","1");
+	var istart = 0;    //初始值
+	var itime = null   //存储两个定时器
 	var fobj = $(".index-banner");       			//获取父元素
 	var aleng = $(".index-banner a").length;       //获取图片个数
 	if( aleng > 2 ){                               //添加元素
@@ -49,25 +51,33 @@ $(document).ready(function(){
 			$('.index-banner-span').append("<span></span>");
 		}
 	}
+	$(document).on("click",'.index-banner-span span',function(){
+		istart = $(this).index();
+		indexg( );
+	})
 	/**
-	 * 自动切换函数
-	 * @param  booleans nub 传入指定切换数字
+	 * 按钮切换
 	 * @param  number nub 传入指定切换数字
 	 * @return mixed
 	 */
-	function indexg( kai, nub ){
-		if( kai ){
-			$('.index-banner-span span').css("opacity","0");
-			$('.index-banner-span span').eq( nub ).animate({
-				height:"300px"
-			});
-		}else{
-			// for (var i = 0; i < aleng; i++) {
-				
-			// }
+	function indexg( ){
+		if( istart >= aleng){
+			istart = 0;
 		}
+		$('.index-banner-span span').removeClass('on');
+		$('.index-banner-span span').eq(istart).addClass('on');
+		$('.index-banner a').css("opacity","0");
+		$('.index-banner a').eq( istart ).animate({
+			opacity:1
+		},800);
+		istart++
 	}
-	// var indextime = window.setInterval(indexg( false ),1000); 
+	itime = window.setInterval(indexg,1000); 
+	$(".index-banner").mousemove(function(event) {
+		clearInterval(itime);
+	}).mouseout(function(event) {
+		itime = window.setInterval(indexg,1000); 
+	});
 
 
 	/*首页设计师切换*/
