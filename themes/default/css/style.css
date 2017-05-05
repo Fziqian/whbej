@@ -10,6 +10,7 @@
 	height: 100%;
 	overflow: hidden;
 	position: absolute;
+	opacity: 0;
 }
 
 .index-banner .index-banner-span{

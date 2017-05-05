@@ -17,28 +17,58 @@ $(document).ready(function(){
 		}
 	});
 	/*首页banner图切换*/
-	var mleng = $(".index-banner a").length - $(".index-banner .index-banner-span span").length;
-	var tspan = $(".index-banner .index-banner-span");
-	var showSpan = tspan.find("span");
-	if(mleng > 0){
-		for(var i = 0;i < mleng;i++) {
-			var mspan = document.createElement("span");
-			tspan[0].appendChild(mspan);
-		}
-	}else if(mleng == 0){
-		return;
-	} else {
-		for(var i = 0;i > mleng;i--){
-			$(".index-banner .index-banner-span span")[0].remove();
+	// var mleng = $(".index-banner a").length - $(".index-banner .index-banner-span span").length;
+	// var tspan = $(".index-banner .index-banner-span");
+	// var showSpan = tspan.find("span");
+	// if(mleng > 0){
+	// 	for(var i = 0;i < mleng;i++) {
+	// 		var mspan = document.createElement("span");
+	// 		tspan[0].appendChild(mspan);
+	// 	}
+	// }else if(mleng == 0){
+	// 	return;
+	// } else {
+	// 	for(var i = 0;i > mleng;i--){
+	// 		$(".index-banner .index-banner-span span")[0].remove();
+	// 	}
+	// }
+	// var iNow = 0;
+	// showSpan.on("click",function () {
+	// 	$(this).addClass("on").siblings().removeClass("on");
+	// 	var index = $(this).index();
+	// 	iNow = index;
+	// 	$(".index-banner a").eq(iNow).fadeIn().siblings().fadeOut();
+	// })
+	/*首页banner图切换start*/
+	$(".index-banner a").eq(0).css("opacity","1");
+	var fobj = $(".index-banner");       			//获取父元素
+	var aleng = $(".index-banner a").length;       //获取图片个数
+	if( aleng > 2 ){                               //添加元素
+		fobj.append("<div class='index-banner-span'></div>");
+		for (var i = 0; i < aleng; i++) {
+			$('.index-banner-span').append("<span></span>");
 		}
 	}
-	var iNow = 0;
-		showSpan.on("click",function () {
-			$(this).addClass("on").siblings().removeClass("on");
-			var index = $(this).index();
-			iNow = index;
-			$(".index-banner a").eq(iNow).fadeIn().siblings().fadeOut();
-		})
+	/**
+	 * 自动切换函数
+	 * @param  booleans nub 传入指定切换数字
+	 * @param  number nub 传入指定切换数字
+	 * @return mixed
+	 */
+	function indexg( kai, nub ){
+		if( kai ){
+			$('.index-banner-span span').css("opacity","0");
+			$('.index-banner-span span').eq( nub ).animate({
+				height:"300px"
+			});
+		}else{
+			// for (var i = 0; i < aleng; i++) {
+				
+			// }
+		}
+	}
+	// var indextime = window.setInterval(indexg( false ),1000); 
+
 
 	/*首页设计师切换*/
 	$(document).on('mouseover', '.left .signer_right', function ( ) {
