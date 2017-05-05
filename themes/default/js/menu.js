@@ -178,7 +178,7 @@ $(document).ready(function(){
 		  shadeClose: true,
 		  shade: 0.5,
 		  area: ['980px', '370px'],
-		  content: 'http://www.whbej.com/index.php?tender-eject.html' //iframe的url
+		  content: '/index.php?tender-eject.html' //iframe的url
 		}); 
 	})
 	/*首页三重礼弹出框*/
@@ -189,7 +189,7 @@ $(document).ready(function(){
 		  shadeClose: true,
 		  shade: 0.5,
 		  area: ['600px', '270px'],
-		  content: 'http://www.whbej.com/index.php?package-yuyue-'+$(this).data("id")+'.html' //iframe的url
+		  content: '/index.php?package-yuyue-'+$(this).data("id")+'.html' //iframe的url
 		}); 
 	})	
 	/* 底部表单切换 */

@@ -718,8 +718,8 @@ index.css?v=201610132053:1867
 
 /*登录页面样式*/
 .land_content  input{ width:100%; height:42px; margin:10px 0px;}
-.land_content  input.txt{ background:#fff; border:1px solid #e3e3e3; color:#666;}
-.land_content  input.bt{ -webkit-appearance: none; background:#fe8007; text-align:center; font-size:16px; line-height:42px; border:none; color:#fff; font-family:"微软雅黑"; border-radius:5px;}
+.land_content  input.txt{ background:#fff; border:1px solid #e3e3e3; color:#666; text-indent: 0.3rem;}
+.land_content  input.bt{ -webkit-appearance: none; background:#fe8007; text-align:center; font-size:16px; line-height:42px; border:none; color:#fff; font-family:"微软雅黑"; border-radius:5px; cursor: pointer;}
 .f-c-d-title {
     font-size: 17px;
     font-weight: bold;
@@ -776,22 +776,24 @@ index.css?v=201610132053:1867
     padding-bottom: 0.25rem;
 }
 .building_list a.lt{ 
-    width: 5.0rem;
+    width: 4.0rem;
     display:inline-block; 
     border:1px solid #e3e3e3; 
     margin-right:0.25rem;
 }
 .building_list a.lt img{
-    width: 5.0rem;
-    height: 3.5rem;
+    width: 4.0rem;
+    height: 4rem;
 }
 .building_list_rt{ 
     border:none; 
-    width: 40%;
+    width: 54%;
     /*max-width:200px; */
+    min-height: 4.0rem;
     overflow:hidden;
+    position: relative;
 }
-.building_list_rt p{ margin-bottom:0.125rem; line-height: 0.45rem;}
+.building_list_rt p{ margin-bottom:0.125rem; line-height: 0.6rem;}
 .building_list_rt p span.bg{ display:inline-block; padding:0.04rem 0.1rem; border-radius: 0.125rem; background:#df0a12; color:#fff;}
 .building_list_rt p span.yellow{ 
     color: #fe8007;
@@ -813,7 +815,11 @@ index.css?v=201610132053:1867
 /*看工地详情页样式*/
 
 /*设计师列表页样式*/
-.designer_list_rt p span{float:right;}
+.designer_list_rt p span{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
 .designer_list_rt p span a{ display:inline-block; height:18px; width:38px; border-radius:2px; background:#fe8007; margin-left:5px; line-height:18px; color:#fff; text-align:center; }
 .designer_list_rt p span a.red_bg{ background:#df0a12;}
 /*设计师列表页样式*/
@@ -969,13 +975,13 @@ form.tuanzhuang input.bt{ background:url(../images/mobile/search_bg.png) no-repe
     padding: 0 0.4rem;
     padding-top: 0.8rem;
     padding-bottom: 0.8rem;
-    background-color: #f14949;
+    background-color: #9dc815;
 }
 .zh-m-form h1 {
     width: 100%;
     height: 1rem;
     line-height: 1.0rem;
-    color: #f7d832;
+    color: #ff5f2e;
     font-size: 20px;
     text-align: center;
     margin: 0 auto;
@@ -1008,7 +1014,7 @@ form.tuanzhuang input.bt{ background:url(../images/mobile/search_bg.png) no-repe
 	width: 100%;
     margin-top: 0.2rem;
     border-radius: 5px;
-    background-color: #f7d832;
+    background-color: #ff5f2e;
     border: none;
     color: #fff;
 }
