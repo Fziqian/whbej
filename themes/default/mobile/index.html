@@ -1,7 +1,7 @@
 <{include file="block/mobile_header.html"}>
 <!--头部开始-->
 <div class="mobile_top">
-    <p><a href="tel:18186445083">免费装修咨询</a></p><a class="logo" href="/">
+    <p><a href="tel:15207187756">15207187756</a></p><a class="logo" href="/">
     <!-- <img src="<{$pager.themepath}>/images/mobile/m-logo.png"/> -->
     </a>
 </div>
@@ -24,9 +24,9 @@
     $('.inner').css('width',innerwher+'px');
     var $pointer = $('.pointer span');
     $('.inner').find('img').css('width',dimg);
-    $('.inner').find('a').css('width',dimg); 
+    $('.inner').find('a').css('width',dimg);
     var flipsnap = Flipsnap('.inner', {distance: dimg});
-    flipsnap.element.addEventListener('fsmoveend', function(ev) {
+    flipsnap.element.addEventListener('fsmoveend', function() {
         $pointer.filter('.color').removeClass('color');
         $pointer.eq(flipsnap.currentPoint).addClass('color');
     }, false);
@@ -62,21 +62,21 @@
     <div class="mobile_main_list">
         <ul>
 		    <li>
-                <a href="<{link ctl='quanbao'}>">
+                <a href="<{link ctl='xfzx'}>">
                     <p></p>
-                    <p>全案整装</p>
+                    <p>新房装修</p>
                 </a>
             </li>
 			<li>
-                <a href="<{link ctl='banbao'}>">
+                <a href="<{link ctl='jfzx'}>">
                     <p></p>
-                    <p>个性半包</p>
+                    <p>旧房装修</p>
                 </a>
             </li>
             <li>
                 <a href="<{link ctl='hxsj'}>">
                     <p></p>
-                    <p>旧房装修</p>
+                    <p>全屋设计</p>
                 </a>
             </li>
            
@@ -112,7 +112,7 @@
             <li><a href="<{link ctl='designer'}>"><i class="rj"></i><span>设计团队</span></a></li>
             <li><a href="<{link ctl='case'}>"><i class="fs"></i><span>案例美图</span></a></li>
             <li><a href="<{link ctl='site'}>"><i class="xz"></i><span>在建工地</span></a></li>
-            <li><a href="<{link ctl='activity'}>"><i class="xw"></i><span>优惠活动</span></a></li>
+            <li><a href="<{link ctl='activity:detail' arg0=1}>"><i class="xw"></i><span>优惠活动</span></a></li>
             <li><a href="<{link ctl='zxlc'}>"><i class="dk"></i><span>装修流程</span></a></li>
             <li><a href="<{link ctl='threezx'}>"><i class="mb"></i><span>快学装修</span></a></li>
         </ul>
@@ -164,10 +164,10 @@
     <!-- 设计师列表start -->
     <section>
     <ul class="index-designer">
-        <li><img src="<{$pager.themepath}>/images/mobile/mzsj-p1.png" alt=""></li>
-        <li><img src="<{$pager.themepath}>/images/mobile/mzsj-p1.png" alt=""></li>
-        <li><img src="<{$pager.themepath}>/images/mobile/mzsj-p1.png" alt=""></li>
-        <li><img src="<{$pager.themepath}>/images/mobile/mzsj-p1.png" alt=""></li>
+        <li><img src="<{$pager.themepath}>/images/mobile/m_sj_xc.png" alt="设计师徐灿"></li>
+        <li><img src="<{$pager.themepath}>/images/mobile/m_sj_zx.png" alt="设计师邹茜"></li>
+        <li><img src="<{$pager.themepath}>/images/mobile/m_sj_cs.png" alt="设计师陈珊"></li>
+        <li><img src="<{$pager.themepath}>/images/mobile/m_sj_hz.png" alt="设计师胡珍"></li>
     </ul>
     </section>
     <!-- 设计师列表end -->
