@@ -8,6 +8,7 @@
 class Ctl_Mobile_Threezx extends Ctl_Mobile {
     
     public function index($page=1) {
+    	K::M('helper/seo')->init('mleran',array()); 
         $this->tmpl = 'mobile/threezx.html';
     }
     

@@ -8,6 +8,7 @@
 class Ctl_Mobile_Banbao extends Ctl_Mobile {
     
     public function index($page=1) {
+    	K::M('helper/seo')->init('mlight',array());
         $this->tmpl = 'mobile/banbao.html';
     }
     

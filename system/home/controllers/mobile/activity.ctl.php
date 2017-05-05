@@ -44,6 +44,7 @@ class Ctl_Mobile_Activity extends Ctl_Mobile {
           
             $detail['endtime'] = $detail['end_time'] - __TIME;
             $this->pagedata['detail'] = $detail;
+            K::M('helper/seo')->init('mactivity',array()); 
             $this->tmpl = 'mobile/activity_detail.html';
         }
     }

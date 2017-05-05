@@ -40,7 +40,7 @@ class Ctl_Manager extends Ctl
         $this->pagedata['renqi'] = $renqi;
         $this->pagedata['items'] = $items;
         $this->pagedata['pager'] = $pager;
-        K::M('helper/seo')->init('manager',array());
+        K::M('helper/seo')->init('pcmanager',array());
         $this->tmpl = 'manager.html';
     }
     
@@ -76,7 +76,7 @@ class Ctl_Manager extends Ctl
             $this->pagedata['items'] = $items;
             $this->pagedata['pager'] = $pager;
             K::M('manager/manager')->update_count($manager_id,'views');
-            K::M('helper/seo')->init('manager_detail',array('name'=>$detail['name']));
+            K::M('helper/seo')->init('pcmanagerdetail',array('name'=>$detail['name']));
             $this->tmpl = 'manager_detail.html';
         }       
     }

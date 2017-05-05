@@ -21,6 +21,7 @@ class Ctl_Mobile_Article extends Ctl_Mobile {
         $this->pagedata['nextpage'] = $this->mklink('article:loaddata',  array('page' => '{page}'), array(),false);
         $this->pagedata['items'] = $items;
         $this->pagedata['pager'] = $pager;
+        K::M('helper/seo')->init('mmoreleran',array()); 
         $this->tmpl = 'mobile/article.html';
     }
     

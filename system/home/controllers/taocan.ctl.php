@@ -27,8 +27,10 @@ class Ctl_Taocan extends Ctl {
         // $this->pagedata['detail'] = $detail;
         // K::M('helper/seo')->init('taocan',array('title'=>  $detail['title']));
         if($id == 6){
+            K::M('helper/seo')->init('pcfull',array());
             $this->tmpl = 'taocan6.html';
         }else if($id == 3){
+            K::M('helper/seo')->init('pclight',array());
             $this->tmpl = 'taocan3.html';
         }
     }

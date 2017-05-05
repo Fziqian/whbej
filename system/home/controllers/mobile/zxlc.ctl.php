@@ -8,6 +8,7 @@
 class Ctl_Mobile_Zxlc extends Ctl_Mobile {
     
     public function index($page=1) {
+    	K::M('helper/seo')->init('mprocess',array()); 
         $this->tmpl = 'mobile/zxlc.html';
     }
     

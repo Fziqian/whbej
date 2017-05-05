@@ -32,6 +32,7 @@ class Ctl_Mobile_Site extends Ctl_Mobile {
         $this->pagedata['items'] = $items;
         $this->pagedata['pager'] = $pager;
         $this->pagedata['status'] = K::M('site/site')->get_status();
+        K::M('helper/seo')->init('msite',array()); 
         $this->tmpl = 'mobile/site.html';      
     }
     
@@ -76,6 +77,7 @@ class Ctl_Mobile_Site extends Ctl_Mobile {
             $this->pagedata['status'] = K::M('site/site')->get_status();
             $this->pagedata['designer'] = K::M('designer/designer')->detail($detail['designer_id']);
             $this->pagedata['items']  = K::M('site/notes')->items(array('site_id'=>$site_id), null, 1, 20);
+            K::M('helper/seo')->init('msitedetail',array()); 
             $this->tmpl = 'mobile/site_detail.html';
         }
     }

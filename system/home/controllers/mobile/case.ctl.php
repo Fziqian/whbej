@@ -19,6 +19,7 @@ class Ctl_Mobile_Case extends Ctl_Mobile {
         $this->pagedata['nextpage'] = $this->mklink('case:loaddata',  array('page' => '{page}'), array(),false);
         $this->pagedata['items'] = $items;
         $this->pagedata['pager'] = $pager;
+        K::M('helper/seo')->init('mcase',array()); 
         $this->tmpl ='mobile/case.html';
     }
     
@@ -49,6 +50,7 @@ class Ctl_Mobile_Case extends Ctl_Mobile {
         $this->pagedata['photos'] = K::M('case/photo')->items_by_case($case_id, 1, 50);
         $this->pagedata['detail'] = $case;
         $this->pagedata['is_like'] = K::M('case/like')->is_like($case_id, __IP);
+        K::M('helper/seo')->init('mcasedetail',array()); 
         $this->tmpl = 'mobile/case_detail.html';
     }
     

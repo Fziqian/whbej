@@ -10,6 +10,7 @@ class Ctl_Mobile_Tender extends Ctl_Mobile {
     public function index(){
         $this->pagedata['setting'] = K::M('tenders/setting')->fetch_all_setting();
         $this->pagedata['type']  = K::M('tenders/setting')->get_type();
+        K::M('helper/seo')->init('mfindcom',array()); 
         $this->tmpl = 'mobile/tender.html';
     }
     /*弹出表单*/

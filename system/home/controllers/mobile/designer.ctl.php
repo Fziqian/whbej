@@ -22,6 +22,7 @@ class Ctl_Mobile_Designer extends Ctl_Mobile {
         $this->pagedata['items'] = $items;
         // var_dump($items);exit;
         $this->pagedata['pager'] = $pager;
+        K::M('helper/seo')->init('mdesigner',array()); 
         $this->tmpl = 'mobile/designer.html';
     }
     
@@ -58,6 +59,7 @@ class Ctl_Mobile_Designer extends Ctl_Mobile {
             $this->pagedata['items'] = $items;
             $this->pagedata['pager'] = $pager;
             K::M('designer/designer')->update_count($designer_id,'views');
+            K::M('helper/seo')->init('mdesignerdetail',array()); 
             $this->tmpl = 'mobile/designer_detail.html';
         }       
     }
