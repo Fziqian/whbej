@@ -78,6 +78,7 @@
 	width:89%;
 	height: 36px;
 	border: none;
+	outline-style: none;
 }
 .site-form form p i{
 	width: 20px;
@@ -740,7 +741,7 @@
 	margin-bottom: 50px;
 }
 .case-classification ul{
-	width: 1198;
+	width: 1198px;
 	overflow: hidden;
 	padding:15px 20px;
 	border: 1px solid #ccc;
@@ -1595,7 +1596,7 @@
     padding: 5px 0 10px;
     margin: 0 auto;
     position: relative;
-    top: -70px;
+    top: 0;
 }
 .ftoollist {
     width: 1000px;

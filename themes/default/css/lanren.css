@@ -96,7 +96,7 @@ table {
   padding: 10px 15px;
   position: absolute;
   top: 50%;
-  z-index: 1000;
+  z-index: 5;
   width: 49px;
   height: 49px;
   margin-top: -47.5px;
