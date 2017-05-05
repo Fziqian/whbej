@@ -31,7 +31,7 @@ class __CFG
 
     CONST RES_URL = 'http://www.whbej.cc/static';
 
-    CONST MYSQL = 'mysql://root:root@localhost:3306/xbej/jh_/UTF8';
+    CONST MYSQL = 'mysql://root:root@localhost/xbej/jh_/UTF8';
 
     CONST SECRET_KEY = 'a34eff0213010bfb0dd07c0ea1b21a28';
     CONST Authorize = '077b98373eb0d53eafa4fa50953335f6';

@@ -11,6 +11,37 @@
 	overflow: hidden;
 	position: absolute;
 }
+
+.index-banner .index-banner-span{
+	position: absolute;
+	width: 100%;
+	height: 20px;
+	left: 0;
+	bottom: 10px;
+	text-align: center;
+	overflow: hidden;
+}
+.index-banner .index-banner-span span{
+	display:inline-block;
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	background-color: #fff;
+	line-height: 20px;
+	margin-left: 10px;
+	vertical-align: middle;
+	cursor: pointer;
+	box-sizing: border-box;
+}
+.on{
+	border: 3px solid rgb(255,95,46);
+}
+
+
+
+
+
+/*************************************************************************************/
 .index-content{
 	width: 1200px;
 	height: auto;
