@@ -1,4 +1,4 @@
-<!--底部开始-->
+   <!--底部开始-->
 <!-- <div class="mobile_bottom">
     <div class="mobile_bottom_son">
         <ul>
@@ -91,7 +91,23 @@
     /*普通表单提交*/
     var lock = 0;
     (function(K, $) {
+        var myreg = /^(((13[0-9]{1})|(15[0-9]{1})|(18[0-9]{1})|(17[0-9]{1}))+\d{8})$/;    //手机正则表达式
         $("#tender_submit").click(function(){
+            var yphone = $(this).parents('form').find("input").eq(2).val();
+            if( yphone == '' || yphone == null ){
+                layer.msg("手机号不能为空", {
+                  icon: 1,
+                  time: 2000 //2秒关闭（如果不配置，默认是3秒）
+                });
+                return;     
+            } 
+            if(!myreg.test(yphone)){
+                layer.msg("请添写正确的11位手机号码", {
+                  icon: 1,
+                  time: 2000 //2秒关闭（如果不配置，默认是3秒）
+                });
+                return; 
+            }
           if (lock == 0) {    
                 lock = 1;
                 $.post("/index.php?ctl=tender&act=save",$("#tenders_form").serialize(),function(ret){
