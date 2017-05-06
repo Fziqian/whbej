@@ -40,14 +40,15 @@ $(document).ready(function(){
 	// 	$(".index-banner a").eq(iNow).fadeIn().siblings().fadeOut();
 	// })
 	/*首页banner图切换start*/
-	$(".index-banner a").eq(0).css("opacity","1");
+	
 	var istart = 0;    //初始值
 	var itime = null   //存储两个定时器
 	var fobj = $(".index-banner");       			//获取父元素
-	var aleng = $(".index-banner a").length;       //获取图片个数
+	var aleng = $(".index-banner a").length -1;       //获取图片个数
+	console.log(aleng);
 	if( aleng > 2 ){                               //添加元素
 		fobj.append("<div class='index-banner-span'></div>");
-		for (var i = 0; i < aleng; i++) {
+		for (var i = 0; i <= aleng; i++) {
 			$('.index-banner-span').append("<span></span>");
 		}
 	}
@@ -61,7 +62,7 @@ $(document).ready(function(){
 	 * @return mixed
 	 */
 	function indexg( ){
-		if( istart >= aleng){
+		if( istart > aleng){
 			istart = 0;
 		}
 		$('.index-banner-span span').removeClass('on');
