@@ -9,8 +9,8 @@
                     <img src="<{$pager.img}>/<{$detail.face_pic}>"/>
                 </div>
                 <div class="mine_sub_top_rt lt">
-                    <p class="title"><a href="<{link ctl='site:detail' arg0=$detail.site_id}>"><{$detail.title}></a></p>
-                    <p>进度：<span><{$status[$detail.status]}></span></p>
+                    <p class="title"><a href="<{link ctl='site:detail' arg0=$detail.site_id}>"><{$detail.title|cutstr:20:'..'}></a></p>
+                    <!--<p>进度：<span><{$status[$detail.status]}></span></p>-->
                     <p class="add"><{$detail.addr}></p>
 					<p>设计师：<a href="<{link ctl='designer:detail' arg0=$detail.designer_id}>"><{$designer.name}></a></p>
 					<a href="<{link ctl='site:yuyue' arg0=$detail.site_id}>"  class="bt title">预约参观>></a>
@@ -25,5 +25,5 @@
             </div>
                 <{/foreach}>
         </div>
-        <div class="cl50"></div>
+
  <{include file="block/mobile_footer.html"}>
