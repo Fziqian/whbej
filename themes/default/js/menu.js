@@ -16,36 +16,12 @@ $(document).ready(function(){
 			$('.top-menu').removeClass('fixed-menu')
 		}
 	});
-	/*首页banner图切换*/
-	// var mleng = $(".index-banner a").length - $(".index-banner .index-banner-span span").length;
-	// var tspan = $(".index-banner .index-banner-span");
-	// var showSpan = tspan.find("span");
-	// if(mleng > 0){
-	// 	for(var i = 0;i < mleng;i++) {
-	// 		var mspan = document.createElement("span");
-	// 		tspan[0].appendChild(mspan);
-	// 	}
-	// }else if(mleng == 0){
-	// 	return;
-	// } else {
-	// 	for(var i = 0;i > mleng;i--){
-	// 		$(".index-banner .index-banner-span span")[0].remove();
-	// 	}
-	// }
-	// var iNow = 0;
-	// showSpan.on("click",function () {
-	// 	$(this).addClass("on").siblings().removeClass("on");
-	// 	var index = $(this).index();
-	// 	iNow = index;
-	// 	$(".index-banner a").eq(iNow).fadeIn().siblings().fadeOut();
-	// })
-	/*首页banner图切换start*/
-	
+	/*首页banner图切换start*/	
 	var istart = 0;    //初始值
 	var itime = null   //存储两个定时器
 	var fobj = $(".index-banner");       			//获取父元素
 	var aleng = $(".index-banner a").length -1;       //获取图片个数
-	console.log(aleng);
+	$(".index-banner a").eq(aleng).css("opacity","1");    //默认显示最后一张
 	if( aleng > 2 ){                               //添加元素
 		fobj.append("<div class='index-banner-span'></div>");
 		for (var i = 0; i <= aleng; i++) {
@@ -73,13 +49,13 @@ $(document).ready(function(){
 		},1000);
 		istart++
 	}
-	itime = window.setInterval(indexg,2000); 
+	itime = window.setInterval(indexg,2500); 
 	$(".index-banner").mousemove(function(event) {
 		clearInterval(itime);
 	}).mouseout(function(event) {
-		itime = window.setInterval(indexg,2000); 
+		itime = window.setInterval(indexg,2500); 
 	});
-
+	/*首页banner图切换end*/	
 
 	/*首页设计师切换*/
 	$(document).on('mouseover', '.left .signer_right', function ( ) {
@@ -91,85 +67,6 @@ $(document).ready(function(){
 		$('.index-article-right ul').hide();
 		$('.index-article-right ul').eq($(this).index()).show();
 	})
-	/* 效果图图片切换 */
-	var gheight = 600;                         //固定高度
-	var img = document.createElement('img');   //添加img标签
-	var gfater = $('.ftoollist ul');           //缩略国父级
-	var ximg = $("<img src='/themes/default/images/loading.gif' />").css({
-		width : '24px',
-		height : '24px',
-		display : "block",
-		margin : "288px auto",
-	});
-	$('.focusimg').append(ximg);   //图片为加载完时显示gif动图
-	var qimg = $('.ftoollist ul li').eq(0).find('img').data('big');
-	loadimg( img, qimg, gheight );
-	//设置父级宽度
-	gfater.css({
-		'width' : gfater.find("li").length*gfater.find("li").eq(0).width(),
-		'height' : "65px"
-			});
-	//左移动
-	$(document).on('click','.focustool .btn_pre',function(){
-		if( $(this).parent().find('ul').width() > $(this).parent().width()+116 ){
-			lrmover( gfater, "-=", 800 );
-			// gfater.animate({
-			// 	'left' : "-=116px"
-			// }, 800);
-		}
-	})
-	//右移动
-	$(document).on('click','.focustool .btn_next',function(){
-		if( $(this).parent().find('ul').position().left < -116 ){
-			lrmover( gfater, "+=", 800 );
-			// gfater.animate({
-			// 	'left' : "+=116px"
-			// }, 800);
-		}
-	})
-	function lrmover( gfater, calculation, speed ){
-		gfater.animate({
-			'left' : calculation+"116px"
-		}, speed);
-	}
-	$(document).on('mouseover','.ftoollist li',function(){
-		$(this).siblings().removeClass("on");
-		$(this).addClass("on");
-		var bigsrc = $(this).find('img').data('big');
-		loadimg( img, bigsrc, gheight )
-	});
-	function loadimg( img, bigsrc, gheight ){
-		var yw;         //原图宽
-		var yh;         //原图高
-		$('.focusimg').find("img").remove();  //清除初始加载的gif
-		img.src = bigsrc;
-		img.addEventListener('load',function(){
-			yw = this.width+'px';
-			yh = this.height+'px';
-			if( parseInt(yh) > gheight ){ 
-				var xw = Math.ceil ( (gheight*parseInt(yw))/parseInt(yh));
-				$('.focusimg').append(this).find("img").css({
-					width : xw,
-					height : gheight+"px",
-					display : "block",
-					margin : "0 auto",
-					opacity: 0
-				}).animate({
-					opacity: 1,
-				}, 1000); 
-			}else{
-				$('.focusimg').append(this).find("img").css({
-					width : yw,
-					height : yh,
-					display : "block",
-					margin : "0 auto",
-					opacity: 0
-				}).animate({
-					opacity: 1,
-				}, 1000); 
-			}
-		})
-	}
 
 	/*统一弹出框*/
 	$(document).on('click','.popupform',function(){

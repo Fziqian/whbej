@@ -68,4 +68,85 @@
     		</div>
     	</div>
     </div>
+    <script>
+        /* 效果图图片切换 */
+        var gheight = 600;                         //固定高度
+        var img = document.createElement('img');   //添加img标签
+        var gfater = $('.ftoollist ul');           //缩略国父级
+        var ximg = $("<img src='/themes/default/images/loading.gif' />").css({
+            width : '24px',
+            height : '24px',
+            display : "block",
+            margin : "288px auto",
+        });
+        $('.focusimg').append(ximg);   //图片为加载完时显示gif动图
+        var qimg = $('.ftoollist ul li').eq(0).find('img').data('big');
+        loadimg( img, qimg, gheight );
+        //设置父级宽度
+        gfater.css({
+            'width' : gfater.find("li").length*gfater.find("li").eq(0).width(),
+            'height' : "65px"
+                });
+        //左移动
+        $(document).on('click','.focustool .btn_pre',function(){
+            if( $(this).parent().find('ul').width() > $(this).parent().width()+116 ){
+                lrmover( gfater, "-=", 800 );
+                // gfater.animate({
+                //  'left' : "-=116px"
+                // }, 800);
+            }
+        })
+        //右移动
+        $(document).on('click','.focustool .btn_next',function(){
+            if( $(this).parent().find('ul').position().left < -116 ){
+                lrmover( gfater, "+=", 800 );
+                // gfater.animate({
+                //  'left' : "+=116px"
+                // }, 800);
+            }
+        })
+        function lrmover( gfater, calculation, speed ){
+            gfater.animate({
+                'left' : calculation+"116px"
+            }, speed);
+        }
+        $(document).on('mouseover','.ftoollist li',function(){
+            $(this).siblings().removeClass("on");
+            $(this).addClass("on");
+            var bigsrc = $(this).find('img').data('big');
+            loadimg( img, bigsrc, gheight )
+        });
+        function loadimg( img, bigsrc, gheight ){
+            var yw;         //原图宽
+            var yh;         //原图高
+            $('.focusimg').find("img").remove();  //清除初始加载的gif
+            img.src = bigsrc;
+            img.addEventListener('load',function(){
+                yw = this.width+'px';
+                yh = this.height+'px';
+                if( parseInt(yh) > gheight ){ 
+                    var xw = Math.ceil ( (gheight*parseInt(yw))/parseInt(yh));
+                    $('.focusimg').append(this).find("img").css({
+                        width : xw,
+                        height : gheight+"px",
+                        display : "block",
+                        margin : "0 auto",
+                        opacity: 0
+                    }).animate({
+                        opacity: 1,
+                    }, 1000); 
+                }else{
+                    $('.focusimg').append(this).find("img").css({
+                        width : yw,
+                        height : yh,
+                        display : "block",
+                        margin : "0 auto",
+                        opacity: 0
+                    }).animate({
+                        opacity: 1,
+                    }, 1000); 
+                }
+            })
+        }
+    </script>
 <{include file="block/footer.html"}>
