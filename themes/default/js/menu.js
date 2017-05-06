@@ -19,9 +19,9 @@ $(document).ready(function(){
 	/*首页banner图切换start*/	
 	var istart = 0;    //初始值
 	var itime = null   //存储两个定时器
-	var fobj = $(".index-banner");       			//获取父元素
-	var aleng = $(".index-banner a").length -1;       //获取图片个数
-	$(".index-banner a").eq(aleng).css("opacity","1");    //默认显示最后一张
+	var fobj = $(".index-bannerx");       			//获取父元素
+	var aleng = $(".index-bannerx a").length -1;       //获取图片个数
+	$(".index-bannerx a").eq(aleng).css("opacity","1");    //默认显示最后一张
 	if( aleng > 2 ){                               //添加元素
 		fobj.append("<div class='index-banner-span'></div>");
 		for (var i = 0; i <= aleng; i++) {
@@ -41,16 +41,16 @@ $(document).ready(function(){
 		if( istart > aleng){
 			istart = 0;
 		}
-		$('.index-banner-span span').removeClass('on');
-		$('.index-banner-span span').eq(istart).addClass('on');
-		$('.index-banner a').css("opacity","0");
-		$('.index-banner a').eq( istart ).animate({
+		$('.index-banner-span span').removeClass('onn');
+		$('.index-banner-span span').eq(istart).addClass('onn');
+		$('.index-bannerx a').css("opacity","0");
+		$('.index-bannerx a').eq( istart ).animate({
 			opacity:1
 		},1000);
 		istart++
 	}
 	itime = window.setInterval(indexg,2500); 
-	$(".index-banner").mousemove(function(event) {
+	$(".index-bannerx").mousemove(function(event) {
 		clearInterval(itime);
 	}).mouseout(function(event) {
 		itime = window.setInterval(indexg,2500); 
@@ -89,7 +89,17 @@ $(document).ready(function(){
 		  area: ['600px', '270px'],
 		  content: '/index.php?package-yuyue-'+$(this).data("id")+'.html' //iframe的url
 		}); 
-	})	
+	})
+	$(document).on('click','.activity_banner a',function(){
+		layer.open({
+			type: 2,
+			title: '',
+			shadeClose: true,
+			shade: 0.5,
+			area: ['600px', '270px'],
+			content: '/index.php?activity_yuyue-'+1+'.html' //iframe的url
+		});
+	})
 	/* 底部表单切换 */
 	$(document).on('click','.form-ren div',function(){
 		var wheight = $(window).height();
