@@ -15,8 +15,11 @@
 	text-align: center;
 }
 .index-banner a img{
-	width: auto;
-	margin: 0 auto;
+	position:absolute;
+	left: 50%;
+	top:50%;
+	margin-left: -960px;
+	margin-top: -300px;
 }
 
 .index-banner .index-banner-span{
