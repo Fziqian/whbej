@@ -9,7 +9,7 @@ body{ color:#666666;  font-family:"微软雅黑","微软雅黑","Microsoft Yahei
 a{ text-decoration:none; cursor:pointer;}
 a:hover{ text-decoration:underline;}
 p,span,a{font-family:"微软雅黑"; font-size:14px; color:#333;}
-p{ line-height:0.3rem;}
+p{ line-height:1rem;}
 ul li{ list-style:none;}
 .red{ color:#c90013;}
 .lt{ float:left;}
