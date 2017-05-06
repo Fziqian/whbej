@@ -1,9 +1,6 @@
 <{include file="block/mobile_header.html"}>
     <!--头部开始-->
-    <div class="mobile_top">
-        <p><a href="tel:18186445083">18186445083</a></p>
-        <a class='llogo' href="/"><i class="back"></i>不二家首页</a>
-    </div>
+
     <div class="cl50"></div>
 <!--头部结束-->
 <div class=" case_sub_main">
@@ -13,7 +10,7 @@
         <div class="building_list_rt  lt">
             <p><a title="<{$item.title}>" href="<{link ctl='site:detail' arg0=$item.site_id}>" class="title"><{$item.title|cutstr:48:''}></a></p>
             <p>进度：<span class="bg"><{$status[$item.status]}></span></p>
-            <p>设计师：<a title='<{$designer_list[$item.designer_id].name}>' href="<{link ctl='designer:detail' arg0=$item.designer_id}>"><{$designer_list[$item.designer_id].name|cutstr:9:''}></a><span class="yellow"><a title="<{$item.title}>" style="color: #fe8007;"  href="<{link ctl='site:detail' arg0=$item.site_id}>">我要参观 ></a></span></p>
+            <p>设计师：<a title='<{$designer_list[$item.designer_id].name}>' href="<{link ctl='designer:detail' arg0=$item.designer_id}>"><{$designer_list[$item.designer_id].name|cutstr:9:''}></a><span class="yellow"><a title="<{$item.title}>" style="color:rgb(255,95,46);"  href="<{link ctl='site:detail' arg0=$item.site_id}>">我要参观 ></a></span></p>
         </div>
 
     </div>

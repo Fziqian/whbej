@@ -11,6 +11,12 @@
 	overflow: hidden;
 	position: absolute;
 	opacity: 0;
+	display: block;
+	text-align: center;
+}
+.index-banner a img{
+	width: auto;
+	margin: 0 auto;
 }
 
 .index-banner .index-banner-span{
