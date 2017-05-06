@@ -90,15 +90,16 @@ $(document).ready(function(){
 		  content: '/index.php?package-yuyue-'+$(this).data("id")+'.html' //iframe的url
 		}); 
 	})
-	$(document).on('click','.activity_banner a',function(){
+	//畅享活动弹出框
+	$(document).on('click','.cpopupform',function(){
 		layer.open({
-			type: 2,
-			title: '',
-			shadeClose: true,
-			shade: 0.5,
-			area: ['600px', '270px'],
-			content: '/index.php?activity_yuyue-'+1+'.html' //iframe的url
-		});
+		  type: 2,
+		  title: '',
+		  shadeClose: true,
+		  shade: 0.5,
+		  area: ['980px', '370px'],
+		  content: $(this).data("url") //iframe的url
+		}); 
 	})
 	/* 底部表单切换 */
 	$(document).on('click','.form-ren div',function(){
