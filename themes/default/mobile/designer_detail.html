@@ -12,6 +12,8 @@
                     <p class="title"><{$detail.name}></p>
                     <p>头衔：<{$detail.cate.cate_name}></p>
                     <{widget id='attr/fromlimit' from='zx:designer' limit=2  title='yes' value=$attrvalues html='p'}>
+                    <p>设计理念/风格：<{$item.concept|cutstr:35:'..'}></p>
+                    <p>个人简介：<{$item.intro|cutstr:35:'..'}> <a  href="<{link ctl='designer:detail' arg0=$item.designer_id}>">></a></p>
                     <a href="<{link ctl='designer:yuyue' arg0=$detail.designer_id}>"  class="bt title">预约设计>></a>
                 </div>
             </div>
@@ -56,7 +58,7 @@
 					<div class="designer_blog_bot_rt lt">
                         <a href="<{link ctl='case:detail' arg0=$item.case_id}>"><img  src="<{$pager.img}>/<{$item.photo}>_thumb.jpg" /></a>
 						<div class="blog_bot_rt_bg"></div>
-						<p><{$item.title|cutstr:18:'..'}></p>
+						<p><{$item.title|cutstr:24:'..'}></p>
 					</div>
 					<p class="miaoshu">案例描述：<{$item.intro}></p>
 				</div>
