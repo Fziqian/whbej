@@ -931,6 +931,25 @@ form.tuanzhuang input.bt{ background:url(../images/mobile/search_bg.png) no-repe
 .html_contents{ 
     margin-bottom:5px;
 }
+.build_over{
+    overflow: hidden;
+}
+.build_img{
+    width: 30%;
+}
+.buld_list{
+    width: 70%;
+    box-sizing: border-box;
+    padding-left: 3%;
+}
+    .buld_list p span{
+        font-size: 12px;
+    }
+.build_float{
+    float: left;
+}
+
+
 
 /* 全屋设计 新房装修 旧房翻新 */
 .content {
