@@ -131,7 +131,7 @@
             <li><a href="<{link ctl='site'}>"><i class="xz"></i><span>在建工地</span></a></li>
             <li><a href="<{link ctl='activity:detail' arg0=1}>"><i class="xw"></i><span>优惠活动</span></a></li>
             <li><a href="<{link ctl='zxlc'}>"><i class="dk"></i><span>装修流程</span></a></li>
-            <li><a href="<{link ctl='threezx'}>"><i class="mb"></i><span>快学装修</span></a></li>
+            <li><a href="<{link ctl='article'}>"><i class="mb"></i><span>装修知识</span></a></li>
         </ul>
     </section>
     <!-- 抢免费设计名额开始 -->
@@ -155,7 +155,7 @@
                <input class="row mfsj-name mfsj-from-fixed" name="data[name]" type="text" placeholder="您的称呼">
                <input class="row mfsj-tel mfsj-from-fixed" id="phone" name="data[mobile]" type="tel" placeholder="手机号码">
                <div class="mfsj-form-arrow">
-                    <input class="row mfsj-area" id="area" readonly="true" name="data[addr]" placeholder="小区地址">
+                    <input type="text" class="row mfsj-area" id="area" name="data[addr]" placeholder="小区地址">
                </div>
                <div class="zxd-form-agree mfsj-form-agree">
                    <img class="checkbox" src="<{$pager.themepath}>/images/mobile/quren.png" alt="">
@@ -214,16 +214,16 @@
     </ul> -->
     <!--首页经典案例结束-->
     <!-- 装修经验start -->
-    <!-- <ul class="mobile_experience">
+    <ul class="mobile_experience">
         <h2>装修经验<b>更多></b></h2>
         <li><img src="<{$pager.themepath}>/images/mobile/m-logo.png" alt=""></li>
         <li><img src="<{$pager.themepath}>/images/mobile/m-logo.png" alt=""></li>
         <li><img src="<{$pager.themepath}>/images/mobile/m-logo.png" alt=""></li>
         <li><img src="<{$pager.themepath}>/images/mobile/m-logo.png" alt=""></li>
-    </ul> -->
+    </ul>
     <!-- 装修经验end -->
     <!-- 文章列表start -->
-    <!-- <div class="mobile-rticle">
+    <div class="mobile-rticle">
         <ul>
             <li>
                 <img src="<{$pager.themepath}>/images/mobile/m-logo.png" alt="">
@@ -247,7 +247,7 @@
                 </span> 
             </li>
         </ul>
-    </div> -->
+    </div>
     <!-- 文章列表end -->
 </div> 
 <{include file="block/mobile_footer.html"}>
