@@ -357,6 +357,7 @@ ul li{ list-style:none;}
     border-radius: 3px;
 }
 .mfsj-from .mfsj-submit {
+    -webkit-appearance: none;
     display: block;
     height: 1.1rem;
     line-height: 1.1rem;
