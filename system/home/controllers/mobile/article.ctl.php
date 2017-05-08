@@ -37,7 +37,7 @@ class Ctl_Mobile_Article extends Ctl_Mobile {
         $items = K::M('article/view')->items($filter, $orderby, $page, $limit, $count);
         $this->pagedata['items'] = $items;
         $this->pagedata['pager'] = $pager;
-        $this->tmpl = 'mobile/article.html';
+        $this->tmpl = 'mobile/article-loaddata.html';
     }
     
     public function detail($article_id){
