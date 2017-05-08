@@ -706,7 +706,7 @@ index.css?v=201610132053:1867
 /*案例列表页样式*/
 
 /*案例详情页样式*/
-.case_sub_main{margin:0px 0.25rem;}
+.case_sub_main{margin:0px 0.25rem;margin-top: 40px;}
 .case_sub_title{ height:60px; background:#434343;}
 .case_sub_title p{ margin:0px; line-height:56px; }
 .case_sub_title p span{color:#fff; font-size:14px;}
@@ -865,8 +865,8 @@ index.css?v=201610132053:1867
 .designer_blog_bot_lt,.designer_blog_bot_rt{ width:50%; min-height:120px;}
 .designer_blog_bot_rt{ margin-top: 10px; position:relative;}
 .designer_blog_bot_rt a{ width:100%; height:auto; display:block;}
-.designer_blog_bot_rt img{ width:100%; height:auto;}
-.blog_bot_rt_bg{ width:100%; height:20px; background:#000; opacity:0.5; position:absolute; bottom:0; left:0;}
+.designer_blog_bot_rt img{ width:100%; height:auto; }
+.blog_bot_rt_bg{ width:167px; height:20px; background:#000; opacity:0.5; position:absolute; bottom:0; left:0;}
 .designer_blog_bot_rt p{position:absolute; bottom:0; left:3px; color:#fff;line-height: 20px;}
 .case_list{min-height:200px;overflow: hidden;}
 .case_list p.miaoshu{ width:100%; float:left; }
@@ -930,6 +930,15 @@ form.tuanzhuang input.bt{ background:url(../images/mobile/search_bg.png) no-repe
 .html_contents{ 
     margin-bottom:5px;
 }
+    .html_contents p{
+        box-sizing: content-box;
+    }
+    .html_contents p img{
+        display: block;
+      transform: scale(0.6);
+        margin-left: -25%;
+
+    }
 /* 全屋设计 新房装修 旧房翻新 */
 .content {
     max-width: 640px;
@@ -1070,7 +1079,8 @@ form.tuanzhuang input.bt{ background:url(../images/mobile/search_bg.png) no-repe
 img {
     border: none;
     width: 100%;
-    vertical-align: top;
+    /*vertical-align: top;*/
+    vertical-align:middle;
 }
 .zh-procedure-before, .zh-procedure-ing, .zh-procedure-after {
     width: 100%;
