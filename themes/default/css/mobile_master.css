@@ -930,15 +930,7 @@ form.tuanzhuang input.bt{ background:url(../images/mobile/search_bg.png) no-repe
 .html_contents{ 
     margin-bottom:5px;
 }
-    .html_contents p{
-        box-sizing: content-box;
-    }
-    .html_contents p img{
-        display: block;
-      transform: scale(0.9);
-        margin-left: -35%;
 
-    }
 /* 全屋设计 新房装修 旧房翻新 */
 .content {
     max-width: 640px;
