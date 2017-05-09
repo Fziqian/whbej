@@ -233,39 +233,19 @@
             <h2>热点文章<b>更多></b></h2>
         </div>
         <ul>
+            <{foreach from=$items item=item}>  
             <li>
-                <a href="">
-                    <img src="<{$pager.themepath}>/images/mobile/m-logo.png" alt="">
+                <a href="<{link ctl='article:detail' arg0=$item.article_id}>">
+                    <img src="<{$pager.img}>/<{$item.thumb}>" alt="<{$item.title}>">
                 </a>
-                <a href="">
-                      <span>
-                        <p>深圳板式家具厂家有哪些</p>
-                        <p>随着人们生活条件好转、审美眼光的提高，在购买家具的时候不再是够用、能用就好，而是会讲究造型、材质等等，为自己买到合心意的家具产品。板式家具是目前人们喜欢的一种家具类型，各地家具厂家也大量生产板式家具，...</p>
-                      </span>
+                <a href="<{link ctl='article:detail' arg0=$item.article_id}>">
+                    <span>
+                        <p><{$item.title|cutstr:29:'..'}></p>
+                        <p><{$item.desc|cutstr:29:'..'}></p>
+                    </span>
                 </a>
             </li>
-            <li>
-                <a href="">
-                    <img src="<{$pager.themepath}>/images/mobile/m-logo.png" alt="">
-                </a>
-                <a href="">
-                      <span>
-                        <p>深圳板式家具厂家有哪些</p>
-                        <p>随着人们生活条件好转、审美眼光的提高，在购买家具的时候不再是够用、能用就好，而是会讲究造型、材质等等，为自己买到合心意的家具产品。板式家具是目前人们喜欢的一种家具类型，各地家具厂家也大量生产板式家具，...</p>
-                      </span>
-                </a>
-            </li>
-            <li>
-                <a href="">
-                    <img src="<{$pager.themepath}>/images/mobile/m-logo.png" alt="">
-                </a>
-                <a href="">
-                      <span>
-                        <p>深圳板式家具厂家有哪些</p>
-                        <p>随着人们生活条件好转、审美眼光的提高，在购买家具的时候不再是够用、能用就好，而是会讲究造型、材质等等，为自己买到合心意的家具产品。板式家具是目前人们喜欢的一种家具类型，各地家具厂家也大量生产板式家具，...</p>
-                      </span>
-                </a>
-            </li>
+            <{/foreach}>
         </ul>
     </div>
     <!-- 文章列表end -->
