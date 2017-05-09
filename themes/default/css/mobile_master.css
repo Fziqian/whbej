@@ -774,6 +774,9 @@ index.css?v=201610132053:1867
         right: 0;
         top:0;
         border:none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
     }
     .enroll_main form .se{
         border: 1px solid rgb(190,190,190);
