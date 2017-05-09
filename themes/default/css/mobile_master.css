@@ -763,16 +763,25 @@ index.css?v=201610132053:1867
         top: 10px;
     }
     .enroll_main form label input{
-        padding-left:2.2rem;
+        padding-left:2.4rem;
         box-sizing: border-box;
         height:1.01875rem
     }
     .enroll_main form label select{
-        padding-left: 2rem;
-        height:1.01875rem
+        margin-left: 2.4rem;
+        width: 73%;
+        height:auto;
+        border:none;
+        margin-top: 8px;
+        box-sizing: border-box;
+    }
+    .enroll_main form .se{
+        border: 1px solid rgb(190,190,190);
+        box-sizing: border-box;
+        margin-bottom: 10px;
     }
     .enroll_main form label textarea{
-        padding-left: 2.2rem;
+        padding-left: 2.4rem;
         padding-top: 0.25rem;
         box-sizing: border-box;
         font-size: 16px;
