@@ -4,7 +4,11 @@
     <list default="true" id="c519b38c-cbb7-4f36-bc1f-1013e2f347d3" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/themes/default/css/mobile_master.css" afterPath="$PROJECT_DIR$/themes/default/css/mobile_master.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/themes/default/mobile/activity_detail.html" afterPath="$PROJECT_DIR$/themes/default/mobile/activity_detail.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/themes/default/mobile/article_detail.html" afterPath="$PROJECT_DIR$/themes/default/mobile/article_detail.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/themes/default/mobile/index.html" afterPath="$PROJECT_DIR$/themes/default/mobile/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/themes/default/mobile/site_yuyue.html" afterPath="$PROJECT_DIR$/themes/default/mobile/site_yuyue.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/themes/default/mobile/tender.html" afterPath="$PROJECT_DIR$/themes/default/mobile/tender.html" />
     </list>
     <ignored path="whbej.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -28,30 +32,66 @@
       <file leaf-file-name="mobile_master.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/themes/default/css/mobile_master.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="554">
-              <caret line="606" column="28" selection-start-line="606" selection-start-column="28" selection-end-line="606" selection-end-column="28" />
+            <state relative-caret-position="684">
+              <caret line="28" column="1" selection-start-line="28" selection-start-column="1" selection-end-line="28" selection-end-column="6" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="public.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/themes/default/css/public.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-324">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/themes/default/mobile/index.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="404">
-              <caret line="242" column="50" selection-start-line="242" selection-start-column="50" selection-end-line="242" selection-end-column="50" />
+              <caret line="232" column="28" selection-start-line="232" selection-start-column="28" selection-end-line="232" selection-end-column="28" />
               <folding>
-                <element signature="e#9270#9485#0" expanded="false" />
+                <element signature="n#div#3;n#div#3;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#div#6;n#div#3;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#div#8;n#div#3;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#div#10;n#div#3;n#body#0;n#html#0;n#!!top" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="mobile_header.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/themes/default/block/mobile_header.html">
+      <file leaf-file-name="tender.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/themes/default/mobile/tender.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="396">
-              <caret line="14" column="8" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="94" />
+            <state relative-caret-position="656">
+              <caret line="82" column="0" selection-start-line="82" selection-start-column="0" selection-end-line="82" selection-end-column="0" />
+              <folding>
+                <element signature="n#style#0;n#p#1;n#label#5;n#form#0;n#div#1;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#font#0;n#p#1;n#label#5;n#form#0;n#div#1;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="activity_detail.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/themes/default/mobile/activity_detail.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="728">
+              <caret line="21" column="34" selection-start-line="21" selection-start-column="34" selection-end-line="21" selection-end-column="34" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="article_detail.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/themes/default/mobile/article_detail.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="432">
+              <caret line="18" column="32" selection-start-line="18" selection-start-column="32" selection-end-line="18" selection-end-column="32" />
               <folding />
             </state>
           </provider>
@@ -74,9 +114,7 @@
         <option value="$PROJECT_DIR$/system/plugins/widgets/tenders/templateform.html" />
         <option value="$PROJECT_DIR$/themes/default/css/menu.css" />
         <option value="$PROJECT_DIR$/themes/default/block/footer.html" />
-        <option value="$PROJECT_DIR$/themes/default/block/sheader.html" />
         <option value="$PROJECT_DIR$/themes/default/mobile/designer.html" />
-        <option value="$PROJECT_DIR$/themes/default/mobile/tender.html" />
         <option value="$PROJECT_DIR$/themes/default/mobile/tuan_yuyue.html" />
         <option value="$PROJECT_DIR$/themes/default/mobile/case_detail.html" />
         <option value="$PROJECT_DIR$/themes/default/mobile/404.html" />
@@ -91,20 +129,22 @@
         <option value="$PROJECT_DIR$/themes/default/activity_detail.html" />
         <option value="$PROJECT_DIR$/themes/default/index-s.html" />
         <option value="$PROJECT_DIR$/themes/default/js/menu.js" />
-        <option value="$PROJECT_DIR$/themes/default/mobile/site_yuyue.html" />
         <option value="$PROJECT_DIR$/themes/default/mobile/my.html" />
         <option value="$PROJECT_DIR$/themes/default/mobile/designer_detail.html" />
         <option value="$PROJECT_DIR$/themes/default/mobile/designer_yuyue.html" />
         <option value="$PROJECT_DIR$/themes/default/mobile/activity.html" />
         <option value="$PROJECT_DIR$/themes/default/block/mobile_header.html" />
-        <option value="$PROJECT_DIR$/themes/default/mobile/article_detail.html" />
-        <option value="$PROJECT_DIR$/themes/default/mobile/activity_detail.html" />
         <option value="$PROJECT_DIR$/themes/default/mobile/activity_yuyue.html" />
         <option value="$PROJECT_DIR$/themes/default/block/mobile_footer.html" />
         <option value="$PROJECT_DIR$/themes/default/mobile/article.html" />
         <option value="$PROJECT_DIR$/themes/default/mobile/article-loaddata.html" />
-        <option value="$PROJECT_DIR$/themes/default/css/mobile_master.css" />
+        <option value="$PROJECT_DIR$/themes/default/block/sheader.html" />
+        <option value="$PROJECT_DIR$/themes/default/mobile/site_yuyue.html" />
+        <option value="$PROJECT_DIR$/themes/default/mobile/tender.html" />
         <option value="$PROJECT_DIR$/themes/default/mobile/index.html" />
+        <option value="$PROJECT_DIR$/themes/default/css/mobile_master.css" />
+        <option value="$PROJECT_DIR$/themes/default/mobile/activity_detail.html" />
+        <option value="$PROJECT_DIR$/themes/default/mobile/article_detail.html" />
       </list>
     </option>
   </component>
@@ -115,7 +155,6 @@
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
-    <option name="y" value="-8" />
     <option name="width" value="1932" />
     <option name="height" value="1056" />
   </component>
@@ -297,7 +336,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="D:/HTML项目/简历(1)/简历" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
     <property name="js-jscs-nodeInterpreter" value="D:\node-v6.2.0-x64\node-v6.2.0-x64\node.exe" />
@@ -381,15 +420,15 @@
       <workItem from="1494058782969" duration="4683000" />
       <workItem from="1494205418988" duration="12381000" />
       <workItem from="1494226979562" duration="9627000" />
-      <workItem from="1494292369894" duration="2154000" />
+      <workItem from="1494292369894" duration="10699000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="81803000" />
+    <option name="totallyTimeSpent" value="90348000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1932" height="1056" extended-state="0" />
+    <frame x="-8" y="0" width="1932" height="1056" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17954071" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -422,17 +461,12 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="1" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/themes/default/mobile/hxsj.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-424">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/themes/default/mobile/quanbao.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-388">
@@ -500,13 +534,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-856">
           <caret line="4" column="19" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/themes/default/css/public.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-5538">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -608,13 +635,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/themes/default/mobile/site_yuyue.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/themes/default/mobile/designer_yuyue.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="828">
@@ -637,13 +657,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/themes/default/mobile/tender.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-144">
-          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/themes/default/mobile/my.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="612">
@@ -655,27 +668,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="396">
           <caret line="11" column="8" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/themes/default/mobile/activity_yuyue.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="792">
-          <caret line="22" column="10" selection-start-line="22" selection-start-column="10" selection-end-line="22" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/themes/default/mobile/activity_detail.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2160">
-          <caret line="60" column="8" selection-start-line="60" selection-start-column="8" selection-end-line="60" selection-end-column="65" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/themes/default/block/sheader.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="612">
-          <caret line="17" column="10" selection-start-line="17" selection-start-column="10" selection-end-line="17" selection-end-column="10" />
         </state>
       </provider>
     </entry>
@@ -735,13 +727,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/themes/default/mobile/article_detail.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="10" column="24" selection-start-line="10" selection-start-column="24" selection-end-line="10" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/system/home/controllers/mobile/article.ctl.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -764,10 +749,53 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/themes/default/css/mobile_master.css">
+    <entry file="file://$PROJECT_DIR$/themes/default/block/sheader.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="554">
-          <caret line="606" column="28" selection-start-line="606" selection-start-column="28" selection-end-line="606" selection-end-column="28" />
+        <state relative-caret-position="612">
+          <caret line="17" column="10" selection-start-line="17" selection-start-column="10" selection-end-line="17" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/default/mobile/activity_loaddata.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/default/mobile/activity_yuyue.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="944">
+          <caret line="27" column="17" selection-start-line="27" selection-start-column="17" selection-end-line="27" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/default/mobile/site_yuyue.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="576">
+          <caret line="22" column="61" selection-start-line="22" selection-start-column="61" selection-end-line="22" selection-end-column="61" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/default/mobile/tender.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="656">
+          <caret line="82" column="0" selection-start-line="82" selection-start-column="0" selection-end-line="82" selection-end-column="0" />
+          <folding>
+            <element signature="n#style#0;n#p#1;n#label#5;n#form#0;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#font#0;n#p#1;n#label#5;n#form#0;n#div#1;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/default/css/public.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-324">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -775,10 +803,37 @@
     <entry file="file://$PROJECT_DIR$/themes/default/mobile/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="404">
-          <caret line="242" column="50" selection-start-line="242" selection-start-column="50" selection-end-line="242" selection-end-column="50" />
+          <caret line="232" column="28" selection-start-line="232" selection-start-column="28" selection-end-line="232" selection-end-column="28" />
           <folding>
-            <element signature="e#9270#9485#0" expanded="false" />
+            <element signature="n#div#3;n#div#3;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#6;n#div#3;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#8;n#div#3;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#10;n#div#3;n#body#0;n#html#0;n#!!top" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/default/css/mobile_master.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="684">
+          <caret line="28" column="1" selection-start-line="28" selection-start-column="1" selection-end-line="28" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/default/mobile/activity_detail.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="728">
+          <caret line="21" column="34" selection-start-line="21" selection-start-column="34" selection-end-line="21" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/default/mobile/article_detail.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="18" column="32" selection-start-line="18" selection-start-column="32" selection-end-line="18" selection-end-column="32" />
+          <folding />
         </state>
       </provider>
     </entry>
