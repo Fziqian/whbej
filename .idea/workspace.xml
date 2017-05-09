@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c519b38c-cbb7-4f36-bc1f-1013e2f347d3" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/themes/default/css/mobile_master.css" afterPath="$PROJECT_DIR$/themes/default/css/mobile_master.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/themes/default/mobile/tender.html" afterPath="$PROJECT_DIR$/themes/default/mobile/tender.html" />
     </list>
     <ignored path="whbej.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -28,8 +26,8 @@
       <file leaf-file-name="mobile_master.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/themes/default/css/mobile_master.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="584">
-              <caret line="792" column="129" selection-start-line="792" selection-start-column="129" selection-end-line="792" selection-end-column="148" />
+            <state relative-caret-position="368">
+              <caret line="777" column="26" selection-start-line="777" selection-start-column="26" selection-end-line="777" selection-end-column="26" />
               <folding />
             </state>
           </provider>
@@ -403,12 +401,12 @@
       <workItem from="1494292369894" duration="10699000" />
       <workItem from="1494310446025" duration="1200000" />
       <workItem from="1494314102474" duration="5652000" />
-      <workItem from="1494322056118" duration="228000" />
+      <workItem from="1494322056118" duration="1223000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="97428000" />
+    <option name="totallyTimeSpent" value="98423000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="0" width="1932" height="1056" extended-state="0" />
@@ -814,8 +812,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/themes/default/css/mobile_master.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="584">
-          <caret line="792" column="129" selection-start-line="792" selection-start-column="129" selection-end-line="792" selection-end-column="148" />
+        <state relative-caret-position="368">
+          <caret line="777" column="26" selection-start-line="777" selection-start-column="26" selection-end-line="777" selection-end-column="26" />
           <folding />
         </state>
       </provider>
