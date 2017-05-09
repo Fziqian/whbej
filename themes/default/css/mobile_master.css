@@ -778,8 +778,8 @@ index.css?v=201610132053:1867
         font-size: 16px;
     }
 
-    .enroll_main form input[type="button"] {
-        margin-top: 100px;
+    .enroll_main form input[name="x"] {
+    margin-top: 100px;
     }
 .enroll_main input,.enroll_main select,.enroll_main textarea{ width:100%;  background:#fff; border:1px solid #bebebe; color:#666;border-radius: 5px;}
 .enroll_main select{
@@ -1198,7 +1198,7 @@ form.tuanzhuang input.bt{ background:url(../images/mobile/search_bg.png) no-repe
     width: 100%;
 }
 img {
-    margin-top: 10px;
+
     border: none;
     width: 100%;
     /*vertical-align: top;*/
