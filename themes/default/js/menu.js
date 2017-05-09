@@ -356,6 +356,19 @@ $(document).ready(function(){
 		})
 		$(this).parent().siblings().eq($(this).index()).css("display","block");
 	})
+	// 悬浮框start
+	$(".btn_top").hide();
+		$(".btn_top").on("click",function(){
+			$('html, body').animate({scrollTop: 0},300);return false;
+		})
+		$(window).bind('scroll resize',function(){
+			if($(window).scrollTop()<=300){
+				$(".btn_top").hide();
+			}else{
+				$(".btn_top").show();
+			}
+		})
+	// 悬浮框end
 
 
 
