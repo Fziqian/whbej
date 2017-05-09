@@ -531,22 +531,23 @@ index.css?v=201610132053:1867
         width: 22%;
         float: left;
 
+
     }
     .mobile_experience li:first-child{
-        background: url("../images/mobile/index-01.png") no-repeat;
+        background: url("../images/mobile/index-01.png") no-repeat center;
         margin-right: 1.9999%;
         margin-left: 3%;
     }
     .mobile_experience li:nth-child(2){
-        background: url("../images/mobile/index-02.png") no-repeat;
+        background: url("../images/mobile/index-02.png") no-repeat center;
         margin-right: 1.9999%;
     }
     .mobile_experience li:nth-child(3){
-        background: url("../images/mobile/index-03.png") no-repeat;
+        background: url("../images/mobile/index-03.png") no-repeat center;
         margin-right: 1.9999%;
     }
     .mobile_experience li:last-child{
-        background: url("../images/mobile/index-04.png") no-repeat;
+        background: url("../images/mobile/index-04.png") no-repeat center;
         margin-right: 3%;
     }
 .mobile_experience li img{
@@ -915,7 +916,7 @@ index.css?v=201610132053:1867
 .designer_blog_bot_rt{ margin-top: 10px; position:relative;}
 .designer_blog_bot_rt a{ width:100%; height:auto; display:block;}
 .designer_blog_bot_rt img{ width:100%; height:auto; }
-.blog_bot_rt_bg{ width:167px; height:20px; background:#000; opacity:0.5; position:absolute; bottom:0; left:0;}
+.blog_bot_rt_bg{ width:100%; height:20px; background:#000; opacity:0.5; position:absolute; bottom:0; left:0;}
 .designer_blog_bot_rt p{position:absolute; bottom:0; left:3px; color:#fff;line-height: 20px;}
 .case_list{min-height:200px;overflow: hidden;}
 .case_list p.miaoshu{ width:100%; float:left; }
@@ -1144,6 +1145,7 @@ form.tuanzhuang input.bt{ background:url(../images/mobile/search_bg.png) no-repe
     width: 100%;
 }
 img {
+    margin-top: 10px;
     border: none;
     width: 100%;
     /*vertical-align: top;*/
