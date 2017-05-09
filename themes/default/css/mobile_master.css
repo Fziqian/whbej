@@ -5,7 +5,7 @@ a,img,a img{
     width: 100%;
     vertical-align: top;
 }
-body{ color:#666666;  font-family:"微软雅黑","微软雅黑","Microsoft Yahei",Arial Narrow; margin:0px; background-color: #f6f6f6;}  
+body{ color:#666666;  font-family:"微软雅黑","微软雅黑","Microsoft Yahei",Arial Narrow; margin:0px;}
 a{ text-decoration:none; cursor:pointer;}
 a:hover{ text-decoration:underline;}
 p,span,a{font-family:"微软雅黑"; font-size:14px; color:#333;}
@@ -21,9 +21,16 @@ ul li{ list-style:none;}
 .cl50{ 
     height:42px;
 }
+.kong{
+    width: 100%;
+    height: 15px;
+    background-color: #e7e7e7;
+}
+.letdd{
+    margin: 0 0.25rem;
+}
 .cl45{ height:45px;}
 .cl100{ height:100px;}
-
 .errowbg {background:url(../images/mobile/bg1.png)}
 .errow {width:280px; height:392px; margin:0 auto; position:relative; background:url(../images/mobile/bg2.png) no-repeat scroll 0 0; background-size:auto 392px; margin-top:35px; margin-bottom:35px;}
 .errow p {display:block; position:absolute; right:45px; top:66px; width:180px; font:14px Microsoft Yahei,simhei,arial,"宋体"; color:#707070; line-height:20px;}
@@ -94,11 +101,11 @@ ul li{ list-style:none;}
 
 .mobile_main{
     overflow: hidden;
-    margin: 0 0.25rem;
 }
 .mobile_banner{height:150px;width:100%;position:relative;margin:0 auto; overflow:hidden;}
 /*头部样式*/
 .mobile_main_list { width: 100%; background-color: #fff;    padding-top: 0.35rem;}
+
 .mobile_main_list ul{
 	overflow: hidden;
 }
@@ -135,7 +142,7 @@ ul li{ list-style:none;}
 	background-color: #fff;
     height: 2.475rem;
     overflow: hidden;
-    margin-top: 0.35rem;
+
 }
 .tablelist li {
     text-align: center;
@@ -143,22 +150,30 @@ ul li{ list-style:none;}
     width: 33.33%;
     height: 1.2rem;
     line-height: 1.2rem;
-    border-left: 0 !important;
-    background-position: left;
-    background-image: linear-gradient(to left, transparent 0%, transparent 50%, #d9d9d9 50%, #d9d9d9 100%);
-    -webkit-background-size: 1px 100%;
-    background-size: 1px 100%;
-    background-repeat: repeat-y !important;
+    box-sizing: border-box;
+
+    /*border-left: 0 !important;*/
+    /*background-position: left;*/
+    /*-webkit-background-size: 1px 100%;*/
+    /*background-size: 1px 100%;*/
+    /*background-repeat: repeat-y !important;*/
 }
 .tablelist li:first-child {
    border-bottom: 1px solid #ccc;
-
 }
 .tablelist li:nth-child(2) {
     border-bottom: 1px solid #ccc;
+
 }
 .tablelist li:nth-child(3) {
     border-bottom: 1px solid #ccc;
+
+}
+.tablelist li:nth-child(2),
+.tablelist li:nth-child(3),
+.tablelist li:nth-child(5),
+.tablelist li:nth-child(6){
+    border-left:1px solid #ccc ;
 }
 .tablelist li a{
     text-align: center;
@@ -614,6 +629,7 @@ index.css?v=201610132053:1867
 
     .mobile_ggw{
         margin-top: 10px;
+        padding-bottom: 10px;
     }
 
 .site-info {
@@ -708,34 +724,72 @@ index.css?v=201610132053:1867
 .content_main{ background:#fff; margin:0px 0.25rem;
     /*padding:5px;*/
 }
-.enroll_main p{ 
-    font-size: 14px;
-    margin: 10px 0px;
-    color: #333333;
-    text-align: center;
-}
-.enroll_main p:first-child{
-    margin: 15px 0;
-    font-size: 16px;
-    line-height: 0.6rem;
-    padding-bottom: 10px;
-    border-bottom: 1px solid #ccc;
-}
-.enroll_main p.tenders-name{
-    font-size: 14px;
-    margin: 10px 0px;
-    padding-bottom: 0px;
-    line-height: 0.3rem;
-    border-bottom: none;
-}
-.enroll_main input,.enroll_main select,.enroll_main textarea{ width:100%;  background:#fff; border:1px solid #bebebe; color:#666;}
+/*.enroll_main p{ */
+    /*font-size: 14px;*/
+    /*margin: 10px 0px;*/
+    /*color: #333333;*/
+    /*text-align: center;*/
+/*}*/
+/*.enroll_main p:first-child{*/
+    /*margin: 15px 0;*/
+    /*font-size: 16px;*/
+    /*line-height: 0.6rem;*/
+    /*padding-bottom: 10px;*/
+    /*border-bottom: 1px solid #ccc;*/
+/*}*/
+/*.enroll_main p.tenders-name{*/
+    /*font-size: 14px;*/
+    /*margin: 10px 0px;*/
+    /*padding-bottom: 0px;*/
+    /*line-height: 0.3rem;*/
+    /*border-bottom: none;*/
+/*}*/
+    .enroll_main form label {
+        position: relative;
+        width: 100%;
+        height:1.01875rem;
+        display: block;
+        margin-top: 20px;
+    }
+    .enroll_main form label p:not([id='showErr']) {
+    position: absolute;
+        left: 10px;
+        top: 0;
+        font-size: 16px;
+
+    }
+    .enroll_main form label span{
+        position: absolute;
+        right: 3px;
+        top: 10px;
+    }
+    .enroll_main form label input{
+        padding-left:2.2rem;
+        box-sizing: border-box;
+        height:1.01875rem
+    }
+    .enroll_main form label select{
+        padding-left: 2rem;
+        height:1.01875rem
+    }
+    .enroll_main form label textarea{
+        padding-left: 2.2rem;
+        padding-top: 0.25rem;
+        box-sizing: border-box;
+        font-size: 16px;
+    }
+
+    .enroll_main form input[type="button"] {
+        margin-top: 100px;
+    }
+.enroll_main input,.enroll_main select,.enroll_main textarea{ width:100%;  background:#fff; border:1px solid #bebebe; color:#666;border-radius: 5px;}
 .enroll_main select{
-    font-size: 14px;
+    font-size: 16px;
 }
-.enroll_main input,.enroll_main select{height:30px; font-size:12px;}
+.enroll_main input,.enroll_main select{height:30px; font-size:16px;}
 
 .enroll_main select{ margin-bottom:10px;}
-.enroll_main input.bt{ margin-top:10px; background:#9dc816; border-radius:5px; color:#fff; font-size:14px; font-weight:bold; border:none; height:35px;}
+.enroll_main input.bt{ margin-top:10px; background:#9dc816; border-radius:5px; color:#fff; font-size:16px; font-weight:bold; border:none; height:35px;}
 .touchblur{
     margin-top:20px;
 }
@@ -764,7 +818,7 @@ index.css?v=201610132053:1867
 .case_sub_title p span.lt font{ font-size:20px; font-family:"微软雅黑";}
 .case_sub_title p span.right{ margin-left:2%;}
 .case_sub_img{ background:#FFF; padding:15px 0px; text-align:center;}
-.case_bottom ul li{ width:30%; padding:0px; height:45px;}
+.case_bottom ul li{ width:33.33333%; padding:0px; height:45px;}
 .case_bottom ul li a{line-height:45px;}
 .case_bottom ul li.li1 a{ background:url(../images/mobile/case_icon1.png) 20% center no-repeat; }
 .case_bottom ul li.li2 a{ background:url(../images/mobile/case_icon2.png) 10% center no-repeat; }
