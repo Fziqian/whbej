@@ -22,7 +22,7 @@
       $(document).ready(function(){
            //图片上下居中					 
         var ccheight = $(window).height();
-        for (var i = 0; i < $(".case_sub_img div").size() ; i++) {
+        for (var i = 0; i < $(".case_sub_img div").length ; i++) {
             imgHeight = $(".case_sub_img div").eq(i).find("img").height();
             if (imgHeight < ccheight) {
                 $(".case_sub_img div,.case_sub_img span").css("height", ccheight + "px");
@@ -45,6 +45,7 @@
         //划动到第几个图片 
         flipsnap.element.addEventListener('fsmoveend', function () {
             var number = $(".case_sub_img img").eq(flipsnap.currentPoint);
+            console.log(number);
             $(".single").html(number.attr("num"));
         }, false);
         var lock = <{$is_like}>;
