@@ -602,14 +602,14 @@ index.css?v=201610132053:1867
 }
     .mobile-rticle ul li span p:first-child{
         white-space: nowrap;
-        margin-top: 0;
+        margin-top: 0.1rem;
         height: 0.6rem;
-        line-height: 0.4rem;
+        line-height: 0.6rem;
         color: #000;
     }
 .mobile-rticle ul li span p:last-child{
 	font-size: 12px;
-	margin-top: 6px;
+
 }
 
     .mobile_ggw{
