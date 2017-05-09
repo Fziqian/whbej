@@ -12,8 +12,8 @@
 	<div class="article-detail">
 		<h2 class="article-detail-title"><{$detail.title}></h2>
 		<span class="article-detail-xtitle">
-			项目经理：<{$manager.name}> &nbsp;&nbsp;楼盘地址: <{$detail.addr}>
-			&nbsp;&nbsp;设计师：<{$designer.name}>  &nbsp;&nbsp;已有<{$detail.views}>人浏览
+			项目经理： <{$manager.name}> 楼盘地址: <{$detail.addr}>
+			设计师： <{$designer.name}> <{widget id="attr/form" from="zx:case" value=$attr  tpl='simple.html'}> 已有<{$detail.views}>人浏览
 		</span>
 		<div class="article-detail-content">
 			<{$detail.intro}>

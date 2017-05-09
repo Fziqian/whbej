@@ -10,7 +10,7 @@ class Ctl_Mobile_Designer extends Ctl_Mobile {
     public function  index($page=1){
         $filter = $pager = array();
         $pager['page'] = max(intval($page), 1);
-        $pager['limit'] = $limit = 30;
+        $pager['limit'] = $limit = 12;
         if ($items = K::M('designer/designer')->items(array(), null, $page, $limit, $count)) {
             foreach($items as $k=>$val){
                  $items[$k]['attr'] = K::M('designer/attr')->attrs_ids_by_designer($val['designer_id']);
