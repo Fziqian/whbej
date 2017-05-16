@@ -26,11 +26,11 @@
     </div>
     <!--qq聊天代码部分begin-->
     <div class="izl-rmenu">
-        <a class="consult" target="_blank"><div class="phone" style="display:none;">027-87859986</div></a>    
-        <a class="cart"><div class="pic"></div></a>   
+        <a class="consult" target="_blank"><div class="phone" style="display:none;"><{$CONFIG.site.phone}></div></a>    
+        <a class="cart"><div class="pic"  style="background-image: url(<{if $CONFIG.site.weixinqr}><{$pager.img}>/<{$CONFIG.site.weixinqr}><{else}>%THEME%/static/images/weixin.jpg<{/if}>);"></div></a>   
         <a href="javascript:void(0)" class="btn_top" style="display: block;"></a>
     </div>
-    <a target="_blank"  href="http://wpa.qq.com/msgrd?v=3&uin=18012219&site=qq&menu=yes" id="udesk-feedback-tab" class="udesk-feedback-tab-left" style="display: block; background-color: black;"></a>
+    <a target="_blank"  href="http://wpa.qq.com/msgrd?v=3&uin=<{$CONFIG.site.kfqq}>&site=qq&menu=yes" id="udesk-feedback-tab" class="udesk-feedback-tab-left" style="display: block; background-color: black;"></a>
     <!--qq聊天代码部分end-->
 
 

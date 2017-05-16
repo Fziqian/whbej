@@ -47,7 +47,7 @@
 					</dl>
 				</li>
 				<li>
-					<img src="<{$pager.img}>/<{$CONFIG.site.weixin}>" alt="微信扫一扫">
+					<img src="<{if $CONFIG.site.weixinqr}><{$pager.img}>/<{$CONFIG.site.weixinqr}><{else}>%THEME%/static/images/weixin.jpg<{/if}>" alt="微信扫一扫">
 				</li>
 				<li>
 					<p>客服执线: <b><{$CONFIG.site.phone}></b></p>

@@ -56,7 +56,18 @@ $(document).ready(function(){
 		itime = window.setInterval(indexg,2500); 
 	});
 	/*首页banner图切换end*/	
-
+	/*首页套餐链接跳转start*/
+	$(".sequence-canvas li").each(function(index, el) {
+		$(this).click(function(event) {
+			/* Act on the event */
+			if( $(this).index() == 0 ){
+				window.location.href="http://www.whbej.cc/index.php?taocan-6.html"
+			}else if( $(this).index() == 1 ){
+				window.location.href="http://www.whbej.cc/index.php?taocan-3.html"
+			}
+		});
+	});
+	/*首页套餐链接跳转end*/
 	/*首页设计师切换*/
 	$(document).on('mouseover', '.left .signer_right', function ( ) {
 		$('.left .signer_all').hide();
