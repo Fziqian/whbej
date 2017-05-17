@@ -164,7 +164,7 @@
 }
 .index-diary{
 	width: 1200px;
-	height: 665px;
+	height: 600px;
 	position: relative;
 }
 .index-diary h2{
@@ -183,30 +183,6 @@
 	line-height: 48px;
 	color: #000;
 	font-weight: 600;
-}
-.index-diary a{
-	width: 380px;
-	height: auto;
-	float: left;
-	margin-left: 27px;
-	border:1px solid #f6f6f6;
-	cursor: pointer;
-	transition: margin 0.5s;
-	-moz-transition: margin 0.5s;	
-	-webkit-transition: margin 0.5s;	
-	-o-transition: margin 0.5s;
-}
-.index-diary a:hover{
-	margin-top: -10px;
-}
-.index-diary a img{
-	width: 380px;
-	height: 460px;
-	display: block;
-	overflow: hidden;
-}
-.index-diary a:nth-child(2){
-	margin-left: 0px;
 }
 .index-diary h2 a {
     width: 90px;
@@ -228,43 +204,59 @@
 }
 .index-diary ul{
 	width: 1200px;
-	height: 46px;
-	position: absolute;
-	top: 471px;
-	left: 0px;
+	height: 100%;
+	overflow: hidden;
 }
 .index-diary ul li{
-	width: 287px;
-	height: 56px;
+	width: 388px;
+	height: auto;
 	line-height: 65px;
 	float: left;
-	margin-left: 14px;
+	margin-left: 22px;
 	text-align: center;
 	font-size: 16px;
 	border: 1px solid #f6f6f6;
-	border-top: none;
 	position: relative;
 	cursor: pointer;
+	transition: margin 0.5s;
+    -moz-transition: margin 0.5s;
+    -webkit-transition: margin 0.5s;
+    -o-transition: margin 0.5s;
+}
+.index-diary ul li:hover{
+	margin-top: -10px;
 }
 .index-diary ul li:first-child{
 	margin-left: 0px;
 }
-.index-diary ul li::before{
-	content: '';
-    width: 20px;
-    height: 20px;
-    display: block;
-    position: absolute;
-    left: 90px;
-    top: 22px;
-    background-image: url(../images/z1-2.png);
-    background-position: 38px -20px;
+.index-diary ul li p{
+	line-height: 20px;
 }
-.index-diary ul li:hover{
-	color: #ff5f2e;
+.index-diary ul li p a{
+	color: #333;
+	text-decoration: none;
 }
-.index-diary ul li:hover::before{
-    background-position: 58px -20px;
+.index-diary ul li p:first-child{
+	width: 388px;
+	height: 278px;
+	margin:0 auto;
+	border-bottom: 1px solid #f6f6f6;
+	padding-bottom: 10px;
+}
+.index-diary ul li p:first-child img{
+	width: 100%;
+	height: 100%; 
+}
+.index-diary ul li p:nth-child(2){
+	padding-top:15px;
+}
+.index-diary ul li p:last-child{
+	padding: 10px;
+	font-size: 14px;
+	text-align: left;
+}
+.index-diary ul li p:last-child a{
+	color: #989797;
 }
 /*.index-diary a::before{
 	width: 220px;

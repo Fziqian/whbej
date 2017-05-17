@@ -63,15 +63,11 @@
         </h2>
         <ul>
             <{foreach $qiyeitems as $qiye}>
-                <li class="popupform">
-                    <p><a href=""><img src="<{$pager.img}>/<{$item.thumb}>" alt=""></a></p>
-                    <p><a href=""><{$item.title|cutstr:45}></a></p>
-                    <p><a href=""><{$item.desc|cutstr:45}></a></p>
+                <li>
+                    <p><a href="<{link ctl='article:detail' arg0=$item.article_id}>"><img src="<{$pager.img}>/<{$qiye.thumb}>" alt=""></a></p>
+                    <p><a href="<{link ctl='article:detail' arg0=$item.article_id}>"><{$qiye.title|cutstr:45}></a></p>
+                    <p><a href="<{link ctl='article:detail' arg0=$item.article_id}>"><{$qiye.desc|cutstr:100}></a></p>
                 </li>
-                <!-- <a href="<{link ctl='article:detail' arg0=$item.article_id}>">
-                    <img src="<{$pager.img}>/<{$item.thumb}>" alt="">
-                    <p><{$item.title|cutstr:45}></p>
-                </a> -->
             <{/foreach}>
         </ul>
     </div>
