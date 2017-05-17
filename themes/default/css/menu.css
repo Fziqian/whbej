@@ -1530,6 +1530,10 @@
 	display: block;
 	float: left;
 }
+.article-case-list ul li .article-list-img img{
+	width: 100%;
+	height: 100%;
+}
 .article-case-list ul li .article-list-wenzi{
 	width: 665px;
 	float:left;

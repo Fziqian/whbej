@@ -48,6 +48,13 @@ class Ctl_Index extends Ctl
       $items = K::M('article/view')->items($filter, $orderby, $page, $limit, $count);
       $this->pagedata['riitems'] = $items;
       //获取指定的装修日记文章end/
+      //实景案例调用装饰头条里面的企业资讯start
+      $filter = array('cat_id'=>array('10'),'audit'=>'1','closed'=>'0','from'=>'article');
+      $orderby = array('orderby'=>'ASC','article_id'=>'DESC');
+      $page = 1; $limit = 3; $count = ''; 
+      $items = K::M('article/view')->items($filter, $orderby, $page, $limit, $count);
+      $this->pagedata['qiyeitems'] = $items;
+      //实景案例调用装饰头条里面的企业资讯end
       K::M('helper/seo')->init('index',array());
       $this->tmpl = 'index.html';
     }

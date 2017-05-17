@@ -61,13 +61,19 @@
             <p>0距离感受不二家装修成品实景案例</p>
             <a href="/article-lists-9.html">查看更多实景</a>
         </h2>
-        <{widget id="adv" name="主页装修实景" limit="3"}>
-        <!-- <ul>
-            <li class="popupform">喜欢这个</li>
-            <li class="popupform">喜欢这个</li>
-            <li class="popupform">喜欢这个</li>
-            <li class="popupform">喜欢这个</li>
-        </ul> -->
+        <ul>
+            <{foreach $qiyeitems as $qiye}>
+                <li class="popupform">
+                    <p><a href=""><img src="<{$pager.img}>/<{$item.thumb}>" alt=""></a></p>
+                    <p><a href=""><{$item.title|cutstr:45}></a></p>
+                    <p><a href=""><{$item.desc|cutstr:45}></a></p>
+                </li>
+                <!-- <a href="<{link ctl='article:detail' arg0=$item.article_id}>">
+                    <img src="<{$pager.img}>/<{$item.thumb}>" alt="">
+                    <p><{$item.title|cutstr:45}></p>
+                </a> -->
+            <{/foreach}>
+        </ul>
     </div>
     <div class="clear"></div>
     <!-- <div class="index-design">

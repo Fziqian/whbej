@@ -20,7 +20,6 @@ class Ctl_Article extends Ctl
     
     public function index($cat_id=0,$page=1)
     {
-       
         $filter = $pager = array();
     	$pager['page'] = max(intval($page), 1);
     	$pager['limit'] = $limit = 8;
